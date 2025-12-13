@@ -1,0 +1,41 @@
+.navMenu {
+  margin-right: 10% !important;
+  gap: 50px;
+  background: white;
+}
+.navMenu li {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+.navMenu li a {
+  color: black;
+  text-decoration: none;
+}
+.navMenu :hover {
+  color: #227235;
+}
+
+.asLlogo img {
+  width: 50%;
+}
+
+.lienSociaux {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+  width: 15%;
+  margin: 10px 0 0 0;
+  margin-left: auto !important;
+}
+.lienSociaux img {
+  width: 10%;
+}
+
+.bmn {
+  background-color: transparent !important;
+  padding: 0;
+}/*# sourceMappingURL=index.css.map */
