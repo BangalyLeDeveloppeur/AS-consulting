@@ -2,10 +2,6 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 ////Déclaration de mes states////
 const AdSlide = () => {
-  const token= localStorage.getItem("token")
-  console.log("Ton token actuel est",token)
- 
-
   const [photos, setPhotos] = useState([]);
   const [titre, setTitre] = useState("");
   const [description, setDescription] = useState("");
@@ -21,7 +17,7 @@ const AdSlide = () => {
   const fetchPhotos = async () => {
     try {
       const res = await axios.get("http://localhost:5000/api/slide");
-      setPhotos(res.data);     
+      setPhotos(res.data);
     } catch (error) {
       console.error("Erreur lors du chargement des photos :", error);
     }
@@ -39,12 +35,10 @@ const AdSlide = () => {
     formData.append("image", image);
     formData.append("titre", titre);
     formData.append("description", description);
-    console.log(formData)
+    console.log(formData);
 
     try {
-      await axios.post("http://localhost:5000/api/slide", formData, {
-        headers: { Authorization: `Bearer ${token}`},
-      });
+      await axios.post("http://localhost:5000/api/slide", formData, {});
 
       setMessage(" Photo ajoutée avec succès !");
       setTitre("");
@@ -52,7 +46,6 @@ const AdSlide = () => {
       setImage(null);
       fetchPhotos();
       console.log(formData);
-      
     } catch (error) {
       console.error("Erreur lors de l'upload :", error);
       setMessage(" Erreur lors de l'upload");
