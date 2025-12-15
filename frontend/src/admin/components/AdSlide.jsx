@@ -2,7 +2,12 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 ////Déclaration de mes states////
 const AdSlide = () => {
+  const token= localStorage.getItem("token")
+  console.log("Ton token actuel est",token)
+ 
+
   const [photos, setPhotos] = useState([]);
+  const [titre, setTitre] = useState("");
   const [description, setDescription] = useState("");
   const [image, setImage] = useState(null);
   const [message, setMessage] = useState("");
@@ -15,8 +20,8 @@ const AdSlide = () => {
   ////Cette fonction me permette de récuperer les photos////
   const fetchPhotos = async () => {
     try {
-      const res = await axios.get("http://localhost:5000/api/photos_accueil");
-      setPhotos(res.data); /// la mise ajour de mon table photo_accueil
+      const res = await axios.get("http://localhost:5000/api/slide");
+      setPhotos(res.data);     
     } catch (error) {
       console.error("Erreur lors du chargement des photos :", error);
     }
@@ -29,20 +34,25 @@ const AdSlide = () => {
       setMessage("Merci de choisir une image");
       return;
     }
-    ///me permet d'envoyer image+texte dans ma requet http(uploard)
+    ///me permet d'envoyer image+texte + titre dans ma requet http(uploard)
     const formData = new FormData();
     formData.append("image", image);
+    formData.append("titre", titre);
     formData.append("description", description);
+    console.log(formData)
 
     try {
-      await axios.post("http://localhost:5000/api/photos_accueil", formData, {
-        headers: { "Content-Type": "multipart/form-data" },
+      await axios.post("http://localhost:5000/api/slide", formData, {
+        headers: { Authorization: `Bearer ${token}`},
       });
+
       setMessage(" Photo ajoutée avec succès !");
+      setTitre("");
       setDescription("");
       setImage(null);
       fetchPhotos();
       console.log(formData);
+      
     } catch (error) {
       console.error("Erreur lors de l'upload :", error);
       setMessage(" Erreur lors de l'upload");
@@ -55,6 +65,15 @@ const AdSlide = () => {
         <h1 className="titre"> Home du slide d'Accueil</h1>
 
         <form onSubmit={handleSubmit}>
+          <div>
+            <label>Titre :</label>
+            <input
+              type="text"
+              value={titre}
+              onChange={(e) => setTitre(e.target.value)}
+              required
+            />
+          </div>
           <div>
             <label>Description :</label>
             <input
@@ -74,7 +93,9 @@ const AdSlide = () => {
             />
           </div>
 
-          <button type="submit" className="botton">Ajouter</button>
+          <button type="submit" className="botton">
+            Ajouter
+          </button>
         </form>
 
         {message && <p>{message}</p>}

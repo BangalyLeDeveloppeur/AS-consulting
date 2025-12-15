@@ -6,6 +6,8 @@ const AuthContext = createContext();
 export const AuthProvider = ({ children }) => {
   const [token, setToken] = useState(() => localStorage.getItem("token"));
 
+ 
+
   useEffect(() => {
     if (token) {
       axios.defaults.headers.common["Authorization"] = `Bearer ${token}`;
@@ -14,8 +16,9 @@ export const AuthProvider = ({ children }) => {
       delete axios.defaults.headers.common["Authorization"];
       localStorage.removeItem("token");
     }
-    //console.log("Token actuel", token);
+    console.log("Token actuel", token);
   }, [token]);
+
   return (
     <AuthContext.Provider value={{ token, setToken }}>
       {children}
