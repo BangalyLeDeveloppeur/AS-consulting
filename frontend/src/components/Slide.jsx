@@ -25,7 +25,6 @@ const Slide = () => {
       {slidePhoto.map((slide) => (
         <div key={slide.id}>
           <img src={`http://localhost:5000${slide.image}`} alt={slide.titre} />
-
           <p>{slide.description}</p>
         </div>
       ))}
