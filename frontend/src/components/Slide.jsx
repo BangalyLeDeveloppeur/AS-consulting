@@ -21,10 +21,10 @@ const Slide = () => {
 
   return (
     <div>
-      <h1>Bonjour je suis slide</h1>
       {slidePhoto.map((slide) => (
         <div key={slide.id}>
           <img src={`http://localhost:5000${slide.image}`} alt={slide.titre} />
+          <h1>{slide.titre}</h1>
           <p>{slide.description}</p>
         </div>
       ))}
