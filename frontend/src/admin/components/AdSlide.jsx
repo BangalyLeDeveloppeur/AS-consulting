@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 ////Déclaration de mes states////
 const AdSlide = () => {
-  const [photos, setPhotos] = useState([]);
   const [titre, setTitre] = useState("");
   const [description, setDescription] = useState("");
   const [image, setImage] = useState(null);
@@ -10,18 +9,7 @@ const AdSlide = () => {
 
   ///me permet d'exécuté une quant le composant est monté autrement dit charger mes photos////
 
-  useEffect(() => {
-    fetchPhotos();
-  }, []);
-  ////Cette fonction me permette de récuperer les photos////
-  const fetchPhotos = async () => {
-    try {
-      const res = await axios.get("http://localhost:5000/api/slide");
-      setPhotos(res.data);
-    } catch (error) {
-      console.error("Erreur lors du chargement des photos :", error);
-    }
-  };
+  
   /// la gestion de formulaire/////
 
   const handleSubmit = async (e) => {

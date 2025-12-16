@@ -71,8 +71,8 @@ const Navigation = () => {
                 >
                   SERVICES{" "}
                 </a>
-                <ul className="dropdown-menu" aria-labelledby="offresDropdown">
-                  <li>
+                <ul className="dropdown-menu menu-deroulent" aria-labelledby="offresDropdown">
+                  <li> 
                     <NavLink
                       to="/formations"
                       className={({ isActive }) =>
