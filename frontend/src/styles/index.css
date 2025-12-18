@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .navMenu {
   margin-right: 10% !important;
   gap: 50px;
@@ -44,4 +45,35 @@
 .menu-deroulent li a {
   text-decoration: none;
   font-size: 0.9rem;
+}
+
+.cadreImage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  height: 800px;
+  -o-object-fit: cover;
+     object-fit: cover; /* garde les proportions sans déformation */
+}
+.cadreImage img {
+  height: 80%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover; /* garde les proportions sans déformation */
+}
+.cadreImage .cadreParagraphe {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }/*# sourceMappingURL=index.css.map */
