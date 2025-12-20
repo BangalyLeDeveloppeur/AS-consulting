@@ -1,10 +1,12 @@
 import React from "react";
 import Slide from "../components/Slide.jsx";
+import Services from "../components/Services.jsx";
+
 const Home = () => {
   return (
     <div>
-      <h1>Bonjour</h1>
-      <Slide/>
+      <Slide />
+      <Services />
     </div>
   );
 };

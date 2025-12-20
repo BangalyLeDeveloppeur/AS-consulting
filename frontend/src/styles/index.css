@@ -11,10 +11,14 @@
 }
 .navMenu li a {
   text-decoration: none;
+  color: black;
+  font-size: 1.5rem;
 }
 .navMenu :hover {
   background: rgba(85, 80, 80, 0.329);
   color: #227235;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .asLlogo img {
@@ -40,11 +44,14 @@
 .bmn {
   background-color: transparent !important;
   padding: 0;
+  margin: 0 0 70px 0;
 }
 
 .menu-deroulent li a {
+  font-weight: lighter;
+  color: rgba(0, 0, 0, 0.918);
   text-decoration: none;
-  font-size: 0.9rem;
+  font-size: 1.2rem;
 }
 
 .cadreImage {
@@ -74,19 +81,78 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  left: 2%;
-  bottom: 150px;
-  height: 330px;
-  width: 35%;
-  background: rgba(0, 0, 0, 0.6117647059);
+  left: 5%;
+  bottom: -100px;
+  height: 340px;
+  width: 50%;
+  background: rgba(0, 0, 0, 0.5490196078);
   position: absolute;
 }
 .cadreImage .cadreParagraphe h1 {
+  padding: 20px 0 0;
   color: white;
   margin-left: 3%;
 }
 .cadreImage .cadreParagraphe p {
   margin-left: 3%;
-  color: rgba(245, 245, 245, 0.5137254902);
+  color: rgba(245, 245, 245, 0.7725490196);
   font-size: 2.5rem;
+}
+
+.savoirPlus {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 60px;
+  width: 250px;
+  top: 680px;
+  left: 6.5%;
+  background: #227235;
+  border: none;
+  position: absolute;
+  border-radius: 8px;
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.savoirPlus p {
+  margin: 0;
+}
+
+.savoirPlus:hover {
+  background: #014ab0;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.cadreFac {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 20px;
+  width: 100%;
+}
+.cadreFac svg.svg-inline--fa.fa-arrow-left,
+.cadreFac svg.svg-inline--fa.fa-arrow-right,
+.cadreFac button {
+  margin-top: -659px;
+  font-size: 2rem;
+  color: #227235;
+  background: transparent;
+  border: none;
+  cursor: pointer;
 }/*# sourceMappingURL=index.css.map */

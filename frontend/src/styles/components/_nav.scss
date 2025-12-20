@@ -2,6 +2,7 @@
   margin-right: 10% !important;
   gap: 50px;
   background: white;
+  
 
   li {
     font-weight: bold;
@@ -10,11 +11,14 @@
 
     a {
       text-decoration: none;
+      color: black;
+      font-size: 1.5rem;
     }
   }
   :hover {
     background: rgba(85, 80, 80, 0.329);
     color: #227235;
+       transition: all 0.3s ease; 
   }
 }
 .asLlogo {
@@ -37,8 +41,12 @@
 .bmn {
   background-color: transparent !important;
   padding: 0;
+  margin: 0 0 70px 0;
 }
 .menu-deroulent li a {
+ font-weight: lighter;
+  color: rgba(0, 0, 0, 0.918);
   text-decoration: none;
-  font-size: 0.9rem;
+  font-size: 1.2rem;
+
 }

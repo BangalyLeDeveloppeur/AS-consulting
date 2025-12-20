@@ -7,8 +7,6 @@ const Slide = () => {
   const [slidePhoto, setSlidePhotos] = useState([]);
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  console.log(slidePhoto);
-
   const fetchPhotos = async () => {
     try {
       const res = await axios.get("http://localhost:5000/api/slide");
@@ -31,7 +29,7 @@ const Slide = () => {
     return () => clearInterval(interval);
   }, [slidePhoto]);
 
-  //  Boutons suivant / précédent
+  //  Boutons6§/< suivant / précédent
   const nextSlide = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % slidePhoto.length);
   };
@@ -40,7 +38,6 @@ const Slide = () => {
       (prevIndex) => (prevIndex - 1 + slidePhoto.length) % slidePhoto.length
     );
   };
-
   const currentPhoto = slidePhoto[currentIndex];
   console.log(currentPhoto);
 
@@ -70,6 +67,7 @@ const Slide = () => {
           <FontAwesomeIcon icon={faArrowRight} />
         </button>
       </div>
+      <button className="savoirPlus">Prendre rendez-vous</button>
     </div>
   );
 };
