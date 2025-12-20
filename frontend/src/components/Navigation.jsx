@@ -58,7 +58,6 @@ const Navigation = () => {
                   A PROPOS
                 </NavLink>
               </li>
-
               {/* Menu déroulant Bootstrap natif */}
               <li className="nav-item dropdown">
                 <a
