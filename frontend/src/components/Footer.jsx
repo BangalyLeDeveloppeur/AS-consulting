@@ -13,11 +13,10 @@ const Footer = () => {
           <h4>Liens rapides</h4>
           <ul className="liens-rapides">
             <a>
-              <li className="liens-rapides">Accueil</li>
+              <li className="liens-rapides">Home</li>
             </a>
-            <li className="liens-rapides">Qui sommes-nous</li>
-            <li className="liens-rapides">Offres</li>
-            <li className="liens-rapides">Galerie</li>
+            <li className="liens-rapides">A propos</li>
+            <li className="liens-rapides">Services</li>
             <li className="liens-rapides">Contact</li>
           </ul>
         </div>
@@ -47,7 +46,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="footer-bottom">
-        <p>© 2025 CAP-PLUS. Tous droits réservés.</p>
+        <p>TeraWeb. Tous droits réservés.</p>
       </div>
     </footer>
   );

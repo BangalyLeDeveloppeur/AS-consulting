@@ -155,4 +155,105 @@
   background: transparent;
   border: none;
   cursor: pointer;
+}
+
+.footer {
+  background-color: #e5edf7;
+  padding: 50px 0;
+  margin-top: 100px;
+}
+.footer .footer-columns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 50px;
+  padding: 0 230px;
+}
+.footer .footer-columns h4 {
+  font-size: 1.5rem;
+  padding-bottom: 20px;
+  color: #333;
+}
+.footer .footer-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+.footer .footer-section li {
+  margin-bottom: 10px;
+  letter-spacing: 0.05rem;
+  color: #000;
+}
+.footer .liens-rapides li {
+  cursor: pointer;
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+}
+.footer .liens-rapides li:hover {
+  color: #0077b6;
+}
+.footer .footer-section-adresse li {
+  cursor: default;
+  color: #000;
+}
+.footer .footer-section-adresse li:hover {
+  color: #000;
+}
+.footer .footer-bottom {
+  margin-top: 30px;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #666;
+  border-top: 1px solid #ccc;
+  padding-top: 15px;
+}
+.footer .footer-resaux {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 200px;
+}
+.footer .footer-reseaux {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.savoirPlusF {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 50px;
+  width: 180px;
+  margin-top: 50px;
+  background: #4dd3ed;
+  border: none;
+  border-radius: 15px;
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease; /* animation douce */
+}
+
+.savoirPlusF:hover {
+  background: #014ab0;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05); /* effet zoom élégant */
 }/*# sourceMappingURL=index.css.map */
