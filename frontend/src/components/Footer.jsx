@@ -21,7 +21,6 @@ const Footer = () => {
             <li className="liens-rapides">Contact</li>
           </ul>
         </div>
-
         {/* Adresse */}
         <div className="footer-section">
           <h4>Adresse</h4>
@@ -38,14 +37,12 @@ const Footer = () => {
         <div className="footer-section">
           <h4>Réseaux sociaux</h4>
           <div className="footer-reseaux">
-          <img src={Logofacebook} alt="Facebook" width="30" />
-    
-          <img src={LogoWhatsapp} alt="instatgram" width="30" />
-    
-          <img src={LogoInsta} alt="instatgram" width="30" />
+            <img src={Logofacebook} alt="Facebook" width="30" />
+            <img src={LogoWhatsapp} alt="instatgram" width="30" />
+            <img src={LogoInsta} alt="instatgram" width="30" />
           </div>
           <Link to={"/Contact"}>
-          <button className="savoirPlusF">Contact</button>
+            <button className="savoirPlusF">Contact</button>
           </Link>
         </div>
       </div>
