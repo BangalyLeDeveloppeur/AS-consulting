@@ -74,7 +74,7 @@ const Navigation = () => {
                 <ul className="dropdown-menu menu-deroulent" aria-labelledby="offresDropdown">
                   <li> 
                     <NavLink
-                      to="/formations"
+                      to="/comptabilite"
                       className={({ isActive }) =>
                         isActive ? "dropdown-item active" : "dropdown-item"
                       }

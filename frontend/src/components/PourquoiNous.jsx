@@ -24,6 +24,7 @@ const PourquoiNous = () => {
           Nous produisons des documents comptables de haute qualité pour
           accompagner votre croissance et vos ambitions entrepreneuriales.
         </p>
+        <button className="btn-nous">Prendre rendez-vous</button>
       </div>
       <div>
         <img src={femmmeSourientes} alt="femme sourinets au bureau" />
