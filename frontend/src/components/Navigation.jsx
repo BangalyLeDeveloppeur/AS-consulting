@@ -106,7 +106,7 @@ const Navigation = () => {
                   </li>
                   <li>
                     <NavLink
-                      to="/maraichere"
+                      to="/formation"
                       className={({ isActive }) =>
                         isActive ? "dropdown-item active" : "dropdown-item"
                       }
