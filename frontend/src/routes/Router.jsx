@@ -9,6 +9,7 @@ import PageEntreprise from "../pages/PageEntreprise.jsx";
 import ConseilFiscal from "../pages/ConseilFiscal.jsx";
 import ConseilGestion from "../pages/ConseilGestion.jsx";
 import PageFormaiton from "../pages/pageFormaiton.jsx";
+import Form from "../components/Form.jsx";
 
 export default function Router() {
   return (
@@ -21,6 +22,7 @@ export default function Router() {
         <Route path="entreprise" element={<PageEntreprise />} />
         <Route path="conseil" element={<ConseilGestion />} />
         <Route path="formation" element={<PageFormaiton />} />
+        <Route path="form" element={<Form />} />
         <Route path="admin" element={<AdminHome />} />
       </Route>
     </Routes>

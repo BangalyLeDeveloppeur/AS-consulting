@@ -1,5 +1,5 @@
 import React from "react";
-import styloImg from "../assets/image/Calculatrice.png";
+import styloImg from "../assets/image/stylo.png";
 const Formation = () => {
   return (
     <div>
