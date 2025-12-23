@@ -7,6 +7,7 @@ import PageApropos from "../pages/PageApropos.jsx";
 import PageGestionComptable from "../pages/PageGestionComptable.jsx";
 import PageEntreprise from "../pages/PageEntreprise.jsx";
 import ConseilFiscal from "../pages/ConseilFiscal.jsx";
+import ConseilGestion from "../pages/ConseilGestion.jsx";
 
 export default function Router() {
   return (
@@ -17,6 +18,7 @@ export default function Router() {
         <Route path="comptabilite" element={<PageGestionComptable />} />
         <Route path="fiscal" element={<ConseilFiscal />} />
         <Route path="entreprise" element={<PageEntreprise />} />
+        <Route path="conseil" element={<ConseilGestion />} />
         <Route path="admin" element={<AdminHome />} />
       </Route>
     </Routes>
