@@ -25,17 +25,25 @@ const Services = () => {
         Au-delà des chiffres, AS consulting est un cabinet d’expertise comptable
         offrant un service humain et se soucie de votre succès.
       </p>
-      {services.map((service) => (
-        <article>
-
-        <div className="service-container">
-        <div key={service.id}>
-          <h2>{service.titre}</h2>
-          <p>{service.description}</p>
+      <div className="container text-center">
+  <div className="row row-cols-1 row-cols-md-3 g-4">
+    {services.map((service) => (
+      <div key={service.id} className="col">
+        <div className="card h-100 border-0 shadow">
+          <div className="card-body d-flex flex-column">
+            <h2 className="h4 card-title">{service.titre}</h2>
+            <p className="card-text mb-4">{service.description}</p>
+            <div className="mt-auto pt-3">
+              <button className="btn btn decouvrez">
+                Découvrir <i className="bi bi-chevron-right ms-1"></i>
+              </button>
+            </div>
+          </div>
         </div>
-        </div>
-        </article>
-      ))}
+      </div>
+    ))}
+  </div>
+</div>
     </div>
   );
 };

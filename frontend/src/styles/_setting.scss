@@ -24,3 +24,29 @@
   background: #014ab0;
   transform: scale(1.05);
 }
+.decouvrez {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  width: 250px;
+
+  left: 6.5%;
+  background: #227235;
+  border: none;
+  position: absolute;
+ top: 120px;
+  border-radius: 8px;
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+  p {
+    margin: 0;
+  }
+}
+.decouvrez:hover {
+  background: #014ab0;
+  transform: scale(1.05);
+}
