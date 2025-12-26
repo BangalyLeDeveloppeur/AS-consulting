@@ -1,34 +1,26 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 ////Déclaration de mes states////
-const AdSlide = () => {
+const Services = () => {
   const [titre, setTitre] = useState("");
   const [description, setDescription] = useState("");
-  const [image, setImage] = useState(null);
   const [message, setMessage] = useState("");
   /// la gestion de formulaire/////
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    if (!image) {
-      setMessage("Merci de choisir une image");
-      return;
-    }
     ///me permet d'envoyer image+texte + titre dans ma requet http(uploard)
     const formData = new FormData();
-    formData.append("image", image);
     formData.append("titre", titre);
     formData.append("description", description);
     console.log(formData);
 
     try {
-      await axios.post("http://localhost:5000/api/slide", formData, {});
+      await axios.post("http://localhost:5000/api/services", formData);
 
       setMessage(" Photo ajoutée avec succès !");
       setTitre("");
       setDescription("");
-      setImage(null);
-      fetchPhotos();
       console.log(formData);
     } catch (error) {
       console.error("Erreur lors de l'upload :", error);
@@ -39,7 +31,7 @@ const AdSlide = () => {
   return (
     <div>
       <section className="admin-section">
-        <h1 className="titre"> Home du slide d'Accueil</h1>
+        <h1 className="titre"> Home du services</h1>
 
         <form onSubmit={handleSubmit}>
           <div>
@@ -60,16 +52,6 @@ const AdSlide = () => {
               required
             />
           </div>
-
-          <div>
-            <label>Image :</label>
-            <input
-              type="file"
-              onChange={(e) => setImage(e.target.files[0])}
-              required
-            />
-          </div>
-
           <button type="submit" className="botton">
             Ajouter
           </button>
@@ -77,10 +59,10 @@ const AdSlide = () => {
 
         {message && <p>{message}</p>}
 
-        <h3>Photos enregistrées :</h3>
+        <h3>Services enregistrées :</h3>
       </section>
     </div>
   );
 };
 
-export default AdSlide;
+export default Services;
