@@ -3,7 +3,9 @@ import femmmeSourientes from "../assets/image/Femmes.png";
 
 const PourquoiNous = () => {
   return (
-    <div>
+    <div className="card">
+      <section className="choix">
+
       <div>
         <h1>
           Nous fournissons un service comptable et fiscal de haute qualité
@@ -29,6 +31,7 @@ const PourquoiNous = () => {
       <div>
         <img src={femmmeSourientes} alt="femme sourinets au bureau" />
       </div>
+      </section>
     </div>
   );
 };
