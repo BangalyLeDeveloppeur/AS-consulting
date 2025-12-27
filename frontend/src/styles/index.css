@@ -43,8 +43,8 @@
       -ms-flex-align: center;
           align-items: center;
   height: 60px;
-  width: 250px;
-  left: 6.5%;
+  width: 100%;
+  left: 0%;
   background: #227235;
   border: none;
   position: absolute;
