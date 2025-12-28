@@ -132,13 +132,13 @@
   width: 100%;
   height: 800px;
   -o-object-fit: cover;
-     object-fit: cover; /* garde les proportions sans déformation */
+     object-fit: cover;
 }
 .cadreImage img {
   height: 80%;
   width: 100%;
   -o-object-fit: cover;
-     object-fit: cover; /* garde les proportions sans déformation */
+     object-fit: cover;
 }
 .cadreImage .cadreParagraphe {
   display: -webkit-box;
@@ -149,7 +149,7 @@
       -ms-flex-direction: column;
           flex-direction: column;
   left: 5%;
-  bottom: 60px;
+  bottom: -100px;
   height: 340px;
   width: 50%;
   background: rgba(0, 0, 0, 0.5490196078);
@@ -287,7 +287,9 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 0 0 50px 0;
+  margin: 0 auto;
+  width: 60%;
+  margin-bottom: 30px;
 }
 .service-titre p {
   font-size: 1.5rem;
@@ -297,10 +299,38 @@
   margin: 0 0 90px 0;
 }
 
+.card.cdrNous {
+  border: none;
+}
+.card.cdrNous h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
 .choix {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  gap: 20px;
+  padding: 0 50px;
+}
+.choix img {
+  width: 100%;
+}
+.choix .choix-texte {
+  background: rgba(3, 2, 2, 0.582);
+  width: 80%;
+  padding: 15px 0 0 0;
+}
+.choix .choix-texte H1, .choix .choix-texte h2, .choix .choix-texte H3 {
+  width: 90%;
+  margin: 0 auto;
+  color: white;
+}
+.choix .choix-texte p {
+  color: white;
+  font-size: 1.2rem;
+  padding: 0 50px;
 }
 
 .footer {
