@@ -25,10 +25,10 @@ const Footer = () => {
           <h4>Adresse</h4>
           <ul className="footer-section-adressee">
             <li>Guinée Conakry</li>
-            <li>Préfecture Dubreka</li>
-            <li>+224 623 52 99 89</li>
-            <li>condebangaly580@gmail.com</li>
-            <li>Siège Nongo</li>
+            <li>+224-669-03-02-19 <br />+224-612-14-24-24</li>
+            <li>Kobayah derière lsa station total</li>
+            <li>Info@ASconsulting.com</li>
+            <li>Siège Kobayah</li>
           </ul>
         </div>
 

@@ -1,5 +1,5 @@
 .footer {
-  background-color: #e5edf7;
+  background-color: #227235;
   padding: 50px 0;
   margin-top: 100px;
 
@@ -12,7 +12,7 @@
     h4 {
       font-size: 1.5rem;
       padding-bottom: 20px;
-      color: #333;
+      color: white;
     }
   }
 
@@ -25,26 +25,29 @@
     li {
       margin-bottom: 10px;
       letter-spacing: 0.05rem;
-      color: #000;
+      color: white;
     }
   }
+  p{
+    color: white;
+  }
 
-  // ✅ Hover uniquement sur les liens rapides
+
   .liens-rapides li {
     cursor: pointer;
     transition: color 0.3s ease;
 
     &:hover {
-      color: #0077b6; // bleu par exemple
+      color: #0077b6; 
     }
   }
 
-  // 🚫 Pas d’effet hover sur l’adresse
+  
   .footer-section-adresse li {
     cursor: default;
     color: #000;
     &:hover {
-      color: #000; // reste identique
+      color: #000; 
     }
   }
 
@@ -82,9 +85,9 @@
   color: white;
   font-size: 1.5rem;
   cursor: pointer;
-  transition: all 0.3s ease; /* animation douce */
+  transition: all 0.3s ease; 
 }
 .savoirPlusF:hover {
   background: #014ab0;
-  transform: scale(1.05); /* effet zoom élégant */
+  transform: scale(1.05); 
 }

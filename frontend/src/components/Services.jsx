@@ -27,7 +27,7 @@ const Services = () => {
           comptable offrant un service humain et se soucie de votre succès.
         </p>
       </div>
-      <div className="container text-center">
+      <div className="container text-center t-container">
         <div className="row row-cols-1 row-cols-md-3 g-4">
           {services.map((service) => (
             <div key={service.id} className="col">
