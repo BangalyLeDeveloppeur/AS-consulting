@@ -3,7 +3,7 @@ import feuilleMain from "../assets/image/main.png";
 
 const Apropos = () => {
   return (
-    <div>
+    <div className="con">
       <div className="cadreParagraphe">
         <h1>
           Des documents comptables fiables pour soutenir la réussite de votre
