@@ -16,16 +16,19 @@
   }
   .choix-texte {
     background: rgba(3, 2, 2, 0.582);
-    width: 80%;
+    width: 65%;
     padding: 15px 0 0 0;
     H1, h2, H3 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
       width: 90%;
-      margin: 0 auto;
       color: white;
     }
     p {
       color: white;
-      font-size: 1.2rem;
+      font-size: 1.5rem;
+      margin: 25px 0;
       
      
       padding: 0 50px;
