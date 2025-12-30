@@ -292,10 +292,15 @@
 }
 .service-titre p {
   font-size: 1.5rem;
+  text-align: center;
 }
 
 .cad {
   margin: 0 0 90px 0;
+}
+
+p {
+  font-size: 1.5rem;
 }
 
 .cadreParagraphe {
@@ -340,6 +345,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  text-align: center;
   padding: 30px 73px 20px 30px;
 }
 .apropos .aproposParagraphe img {
@@ -358,6 +364,9 @@
 .con {
   margin-bottom: 100px;
 }
+.con img {
+  height: 670px;
+}
 
 .avis {
   display: -webkit-box;
@@ -373,6 +382,9 @@
   margin: 0 auto;
   width: 50%;
   border: none;
+}
+.avis p {
+  font-size: 1.5rem;
 }
 
 .avis-client {
@@ -420,7 +432,36 @@
   color: white;
   font-size: 1.5rem;
   margin: 25px 0;
+  text-align: center;
   padding: 0 50px;
+}
+
+.comp {
+  width: 30%;
+}
+.comp h1 {
+  color: white;
+}
+
+.Compta {
+  margin-bottom: 200px;
+}
+.Compta h2 {
+  text-align: center;
+  font-weight: bolder;
+}
+.Compta img {
+  margin-bottom: 70px;
+  height: 668px;
+}
+.Compta .gestion {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.bt {
+  left: 43%;
 }
 
 .footer {

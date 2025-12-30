@@ -27,6 +27,7 @@
   .aproposParagraphe {
     display: flex;
     justify-content: center;
+    text-align: center;
     padding: 30px 73px 20px 30px;
     img {
       width: 100%;
@@ -43,4 +44,7 @@
 }
 .con{
     margin-bottom: 100px;
+    img{
+      height: 670px;
+    }
 }
