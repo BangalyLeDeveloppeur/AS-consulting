@@ -3,12 +3,10 @@
   transform: translate(-100px, -2px);
   transition: all 0.6s ease-out;
   opacity: 0;
-    
 
   p {
     font-size: 1.5rem;
     transition: transform 0.4s ease;
-    
   }
 
   /* Apparition initiale */
@@ -25,7 +23,7 @@
 
 @keyframes appearFromLeft {
   from {
-    transform: translateX(-100px) translateY(-2px); 
+    transform: translateX(-100px) translateY(-2px);
     opacity: 0;
   }
   to {
@@ -46,9 +44,9 @@
     text-align: center;
   }
 }
-.cad{
-    margin: 0 0 90px 0;
+.cad {
+  margin: 0 0 90px 0;
 }
-p{
+p {
   font-size: 1.5rem;
 }
