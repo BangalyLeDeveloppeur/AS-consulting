@@ -3,7 +3,7 @@ import Brochure from "../assets/image/Brochure.png";
 
 const GestionEntreprise = () => {
   return (
-    <div className="gb">
+    <div className="Compta">
       <div className="cadreParagraphe comp">
         <h1>Le bon statut, les bonnes décisions, le bon départ</h1>
       </div>
