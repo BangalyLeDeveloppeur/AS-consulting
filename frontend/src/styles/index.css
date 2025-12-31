@@ -482,8 +482,8 @@ p {
   height: 180px;
   left: 0;
   right: 0;
-  background: #555252;
-  color: #fff;
+  background: #f0ebeb;
+  color: #645d5d;
   padding: 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -498,7 +498,7 @@ p {
 }
 .cookie-banner p {
   margin: 0;
-  font-size: 0.9rem;
+  font-size: 1.5rem;
 }
 .cookie-banner .buttons {
   display: -webkit-box;
