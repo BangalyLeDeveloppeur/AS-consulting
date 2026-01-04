@@ -1,7 +1,35 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 const Form = () => {
+  const [nom, setNom] = useState("");
+  const [prenom, setPrenom] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+  const [notice, setNotice] = useState("")
+  console.log(nom, prenom, email, message);
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    ////////////////////////////////////////
+    const formData = new FormData();
+    formData.append("nom", nom);
+    formData.append("prenom", prenom);
+    formData.append("message", message);
+    formData.append("email", email);
+    console.log(formData);
+
+    try {
+      await axios.post("http://localhost:5000/api/form", formData, {});
+      setNom("")
+      setp("")
+      setEmail("")
+      setMessage("")
+      setNotice("Merci davoir nous contacter notre equipe vous contacterais dans le bref delais !")
+
+    } catch (error) {}
+  };
+
   return (
     <div className="container-fluid bg-light min-vh-100 d-flex align-items-center">
       <div className="container">
@@ -45,7 +73,7 @@ const Form = () => {
               <div className="col-md-7 bg-white p-5">
                 <h3 className="mb-4 text-secondary">Envoyez-nous un message</h3>
 
-                <form>
+                <form onSubmit={handleSubmit}>
                   <div className="row mb-3">
                     <div className="col-sm-6">
                       <label htmlFor="nom" className="form-label">
@@ -57,6 +85,7 @@ const Form = () => {
                         id="nom"
                         name="nom"
                         required
+                        onChange={(e) => setNom(e.target.value)}
                       />
                     </div>
                     <div className="col-sm-6">
@@ -68,6 +97,7 @@ const Form = () => {
                         className="form-control"
                         id="prenom"
                         name="prenom"
+                        onChange={(e) => setPrenom(e.target.value)}
                         required
                       />
                     </div>
@@ -82,6 +112,7 @@ const Form = () => {
                       className="form-control"
                       id="email"
                       name="email"
+                      onChange={(e) => setEmail(e.target.value)}
                       required
                     />
                   </div>
@@ -95,6 +126,7 @@ const Form = () => {
                       id="message"
                       name="message"
                       rows="4"
+                      onChange={(e) => setMessage(e.target.value)}
                       required
                     ></textarea>
                   </div>
