@@ -20,7 +20,7 @@ const Form = () => {
     console.log(formData);
 
     try {
-      await axios.post("http://localhost:5000/api/form", formData, {});
+      await axios.post("http://localhost:5000/api/contact", formData, {});
       setNom("")
       setp("")
       setEmail("")
