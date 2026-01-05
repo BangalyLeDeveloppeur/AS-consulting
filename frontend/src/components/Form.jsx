@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import axios from "axios";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 const Form = () => {
@@ -22,12 +23,14 @@ const Form = () => {
     try {
       await axios.post("http://localhost:5000/api/contact", formData, {});
       setNom("")
-      setp("")
+      setPrenom("")
       setEmail("")
       setMessage("")
       setNotice("Merci davoir nous contacter notre equipe vous contacterais dans le bref delais !")
 
-    } catch (error) {}
+    } catch (error) {
+      console.log("Une erreur c'est produite".error)
+    }
   };
 
   return (
