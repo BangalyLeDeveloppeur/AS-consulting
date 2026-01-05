@@ -7,29 +7,35 @@ const Form = () => {
   const [prenom, setPrenom] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
-  const [notice, setNotice] = useState("")
-  console.log(nom, prenom, email, message);
+  const [notice, setNotice] = useState("");
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    ////////////////////////////////////////
+
     const formData = new FormData();
     formData.append("nom", nom);
     formData.append("prenom", prenom);
     formData.append("message", message);
     formData.append("email", email);
-    console.log(formData);
 
     try {
       await axios.post("http://localhost:5000/api/contact", formData, {});
-      setNom("")
-      setPrenom("")
-      setEmail("")
-      setMessage("")
-      setNotice("Merci davoir nous contacter notre equipe vous contacterais dans le bref delais !")
 
+      setNom("");
+      setPrenom("");
+      setEmail("");
+      setMessage("");
+
+      setNotice(
+        "Merci d'avoir nous contacter notre équipe vous contactera dans les plus brefs délais !"
+      );
+
+      setTimeout(() => {
+        setNotice("");
+      }, 5000);
     } catch (error) {
-      console.log("Une erreur c'est produite".error)
+      console.log("Une erreur s'est produite", error);
+      setNotice("Une erreur s'est produite lors de l'envoi du formulaire.");
     }
   };
 
@@ -44,8 +50,9 @@ const Form = () => {
                 <div className="mb-4">
                   <h2 className="fw-bold">Contactez notre équipe</h2>
                   <p className="opacity-75">
-                    Notre équipe est à votre disposition pour répondre à toutes
-                    vos questions.
+                    Nos experts se tiennent à votre disposition pour vous
+                    accompagner et répondre à toutes vos questions avec
+                    précision.
                   </p>
                 </div>
 
@@ -87,6 +94,7 @@ const Form = () => {
                         className="form-control"
                         id="nom"
                         name="nom"
+                        value={nom}
                         required
                         onChange={(e) => setNom(e.target.value)}
                       />
@@ -100,6 +108,7 @@ const Form = () => {
                         className="form-control"
                         id="prenom"
                         name="prenom"
+                        value={prenom}
                         onChange={(e) => setPrenom(e.target.value)}
                         required
                       />
@@ -115,6 +124,7 @@ const Form = () => {
                       className="form-control"
                       id="email"
                       name="email"
+                      value={email}
                       onChange={(e) => setEmail(e.target.value)}
                       required
                     />
@@ -129,6 +139,7 @@ const Form = () => {
                       id="message"
                       name="message"
                       rows="4"
+                      value={message}
                       onChange={(e) => setMessage(e.target.value)}
                       required
                     ></textarea>
@@ -143,6 +154,7 @@ const Form = () => {
                       Envoyer
                     </button>
                   </div>
+                  <p>{notice}</p>
                 </form>
               </div>
             </div>
