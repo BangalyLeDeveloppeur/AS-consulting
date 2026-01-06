@@ -551,6 +551,10 @@ p {
             transform: translateY(0);
   }
 }
+.cadreImage {
+  height: 200px;
+}
+
 .footer {
   background-color: #227235;
   padding: 50px 0;
