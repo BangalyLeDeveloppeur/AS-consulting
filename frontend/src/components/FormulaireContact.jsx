@@ -1,42 +1,13 @@
-import React, { useState, useEffect } from "react";
-import axios from "axios";
+import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
+import FormPhysique from "./Form.jsx"; 
 
 const FormulaireContact = () => {
-  const [nom, setNom] = useState("");
-  const [prenom, setPrenom] = useState("");
-  const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("");
+  const [typePersonne, setTypePersonne] = useState("");
   const [notice, setNotice] = useState("");
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-
-    const formData = new FormData();
-    formData.append("nom", nom);
-    formData.append("prenom", prenom);
-    formData.append("message", message);
-    formData.append("email", email);
-
-    try {
-      await axios.post("http://localhost:5000/api/contact", formData, {});
-
-      setNom("");
-      setPrenom("");
-      setEmail("");
-      setMessage("");
-
-      setNotice(
-        "Merci d'avoir nous contacter notre équipe vous contactera dans les plus brefs délais !"
-      );
-
-      setTimeout(() => {
-        setNotice("");
-      }, 5000);
-    } catch (error) {
-      console.log("Une erreur s'est produite", error);
-      setNotice("Une erreur s'est produite lors de l'envoi du formulaire.");
-    }
+  const handleTypeChange = (e) => {
+    setTypePersonne(e.target.value);
   };
 
   return (
@@ -45,16 +16,13 @@ const FormulaireContact = () => {
         <div className="row justify-content-center">
           <div className="col-12 col-xl-10">
             <div className="row g-0 shadow rounded-4 overflow-hidden">
-              {/* Colonne d'information */}
+
+              {/* Colonne information */}
               <div className="col-md-5 bg-primary text-white p-5 d-flex flex-column">
-                <div className="mb-4">
-                  <h2 className="fw-bold">Contactez notre équipe</h2>
-                  <p className="opacity-75">
-                    Nos experts se tiennent à votre disposition pour vous
-                    accompagner et répondre à toutes vos questions avec
-                    précision.
-                  </p>
-                </div>
+                <h2 className="fw-bold">Contactez notre équipe</h2>
+                <p className="opacity-75">
+                  Nos experts se tiennent à votre disposition pour vous accompagner.
+                </p>
 
                 <div className="mt-auto">
                   <h5 className="fw-semibold mb-3">
@@ -83,19 +51,35 @@ const FormulaireContact = () => {
               <div className="col-md-7 bg-white p-5">
                 <h3 className="mb-4 text-secondary">Envoyez-nous un message</h3>
 
-                <form onSubmit={handleSubmit}>
-                  <div className="row mb-3">
-                    <label for="pet-select">Vous etes ?</label>
-                    <select id="pet-select">
-                      <option value="">--Veuillez choisir une option--</option>
-                      <option value="personne-physique">
-                        Personne physique
-                      </option>
-                      <option value="personne-moral">Personne morale</option>
-                    </select>
-                  </div>
-                </form>
+                {/* Sélecteur */}
+                <div className="mb-4">
+                  <label htmlFor="type" className="form-label">
+                    <strong>Vous êtes ?</strong>
+                  </label>
+                  <select
+                    id="type"
+                    className="form-select"
+                    value={typePersonne}
+                    onChange={handleTypeChange}
+                  >
+                    <option value="">-- Veuillez choisir une option --</option>
+                    <option value="personne-physique">Personne physique</option>
+                    <option value="personne-morale">Personne morale</option>
+                  </select>
+                </div>
+
+                {/* Chargement dynamique des composants */}
+                {typePersonne === "personne-physique" && <FormPhysique />}
+
+                {typePersonne === "personne-morale" && (
+                  <p className="text-muted">
+                    👉 Le formulaire Personne morale arrive bientôt
+                  </p>
+                )}
+
+                {notice && <p className="text-success mt-3">{notice}</p>}
               </div>
+
             </div>
           </div>
         </div>
