@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import "bootstrap/dist/css/bootstrap.min.css";
 
-const Form = () => {
+const FormulaireContact = () => {
   const [nom, setNom] = useState("");
   const [prenom, setPrenom] = useState("");
   const [email, setEmail] = useState("");
@@ -85,77 +85,15 @@ const Form = () => {
 
                 <form onSubmit={handleSubmit}>
                   <div className="row mb-3">
-                    <div className="col-sm-6">
-                      <label htmlFor="nom" className="form-label">
-                        Nom
-                      </label>
-                      <input
-                        type="text"
-                        className="form-control"
-                        id="nom"
-                        name="nom"
-                        value={nom}
-                        required
-                        onChange={(e) => setNom(e.target.value)}
-                      />
-                    </div>
-                    <div className="col-sm-6">
-                      <label htmlFor="prenom" className="form-label">
-                        Prénom
-                      </label>
-                      <input
-                        type="text"
-                        className="form-control"
-                        id="prenom"
-                        name="prenom"
-                        value={prenom}
-                        onChange={(e) => setPrenom(e.target.value)}
-                        required
-                      />
-                    </div>
                     <label for="pet-select">Vous etes ?</label>
+                    <select id="pet-select">
+                      <option value="">--Veuillez choisir une option--</option>
+                      <option value="personne-physique">
+                        Personne physique
+                      </option>
+                      <option value="personne-moral">Personne morale</option>
+                    </select>
                   </div>
-
-                  <div className="mb-3">
-                    <label htmlFor="email" className="form-label">
-                      E-mail
-                    </label>
-                    <input
-                      type="email"
-                      className="form-control"
-                      id="email"
-                      name="email"
-                      value={email}
-                      onChange={(e) => setEmail(e.target.value)}
-                      required
-                    />
-                  </div>
-
-                  <div className="mb-4">
-                    <label htmlFor="message" className="form-label">
-                      Message
-                    </label>
-                    <textarea
-                      className="form-control"
-                      id="message"
-                      name="message"
-                      rows="4"
-                      value={message}
-                      onChange={(e) => setMessage(e.target.value)}
-                      required
-                    ></textarea>
-                  </div>
-
-                  <div className="d-flex justify-content-between align-items-center">
-                    <small className="text-muted">
-                      * Tous les champs sont obligatoires
-                    </small>
-                    <button type="submit" className="btn btn-primary px-4 py-2">
-                      <i className="bi bi-paper-plane me-2"></i>
-                      Envoyer
-                    </button>
-                  </div>
-                  <p>{notice}</p>
                 </form>
               </div>
             </div>
@@ -166,4 +104,4 @@ const Form = () => {
   );
 };
 
-export default Form;
+export default FormulaireContact;

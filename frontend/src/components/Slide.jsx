@@ -47,7 +47,7 @@ const Slide = () => {
         <div className="cadreImage">
           {currentPhoto && (
             <>
-              <img
+              <img className="img-fluid"
                 src={`http://localhost:5000${currentPhoto.image}`}
                 alt={currentPhoto.description}
               />

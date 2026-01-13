@@ -1,12 +1,12 @@
-import React from 'react';
-import Form from '../components/Form';
+import React from "react";
+import FormulaireContact from "../components/FormulaireContact.jsx";
 
 const PageContact = () => {
-    return (
-        <div>
-            <Form />
-        </div>
-    );
+  return (
+    <div>
+      <FormulaireContact />
+    </div>
+  );
 };
 
 export default PageContact;
