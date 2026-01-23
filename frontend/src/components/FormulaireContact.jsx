@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import FormPhysique from "./Form.jsx"; 
+import FormPhysique from "./Form.jsx";
+import FormMoral from "./FormMoral.jsx";
 
 const FormulaireContact = () => {
   const [typePersonne, setTypePersonne] = useState("");
@@ -16,12 +17,12 @@ const FormulaireContact = () => {
         <div className="row justify-content-center">
           <div className="col-12 col-xl-10">
             <div className="row g-0 shadow rounded-4 overflow-hidden">
-
               {/* Colonne information */}
               <div className="col-md-5 bg-primary text-white p-5 d-flex flex-column">
                 <h2 className="fw-bold">Contactez notre équipe</h2>
                 <p className="opacity-75">
-                  Nos experts se tiennent à votre disposition pour vous accompagner.
+                  Nos experts se tiennent à votre disposition pour vous
+                  accompagner.
                 </p>
 
                 <div className="mt-auto">
@@ -62,24 +63,19 @@ const FormulaireContact = () => {
                     value={typePersonne}
                     onChange={handleTypeChange}
                   >
-                    <option value="">-- Veuillez choisir une option --</option>
+                    <option value="">Veuillez choisir une option</option>
                     <option value="personne-physique">Personne physique</option>
-                    <option value="personne-morale">Personne morale</option>
+                    <option value="personne-morale">Personne moral</option>
                   </select>
                 </div>
 
                 {/* Chargement dynamique des composants */}
                 {typePersonne === "personne-physique" && <FormPhysique />}
 
-                {typePersonne === "personne-morale" && (
-                  <p className="text-muted">
-                    👉 Le formulaire Personne morale arrive bientôt
-                  </p>
-                )}
+                {typePersonne === "personne-morale" && <FormMoral />}
 
                 {notice && <p className="text-success mt-3">{notice}</p>}
               </div>
-
             </div>
           </div>
         </div>

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import "bootstrap/dist/css/bootstrap.min.css";
 
-const Form = () => {
+const FormMoral = () => {
   const [nom, setNom] = useState("");
   const [prenom, setPrenom] = useState("");
   const [email, setEmail] = useState("");
@@ -50,7 +50,7 @@ const Form = () => {
           <div className="row mb-3">
             <div className="col-sm-6">
               <label htmlFor="nom" className="form-label">
-                Nom
+                Nom de votre entreprise
               </label>
               <input
                 type="text"
@@ -64,7 +64,7 @@ const Form = () => {
             </div>
             <div className="col-sm-6">
               <label htmlFor="prenom" className="form-label">
-                Prénom
+                Secteur d'activité
               </label>
               <input
                 type="text"
@@ -76,7 +76,20 @@ const Form = () => {
                 required
               />
             </div>
-            <label for="pet-select">Vous etes ?</label>
+            <div className="col-sm-6">
+              <label htmlFor="prenom" className="form-label">
+                Siège de votre entreprise
+              </label>
+              <input
+                type="text"
+                className="form-control"
+                id="prenom"
+                name="prenom"
+                value={prenom}
+                onChange={(e) => setPrenom(e.target.value)}
+                required
+              />
+            </div>
           </div>
 
           <div className="mb-3">
@@ -125,4 +138,4 @@ const Form = () => {
   );
 };
 
-export default Form;
+export default FormMoral;
