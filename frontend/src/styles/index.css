@@ -139,6 +139,16 @@
   -o-object-fit: cover;
      object-fit: cover;
 }
+.cadreImage .cadreParagraphe h1 {
+  padding: 20px 0 0;
+  color: white;
+  margin-left: 3%;
+}
+.cadreImage .cadreParagraphe p {
+  margin-left: 3%;
+  color: rgba(245, 245, 245, 0.7725490196);
+  font-size: 2.5rem;
+}
 .cadreImage .cadreParagraphe {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -153,16 +163,6 @@
   width: 50%;
   background: rgba(0, 0, 0, 0.5490196078);
   position: absolute;
-}
-.cadreImage .cadreParagraphe h1 {
-  padding: 20px 0 0;
-  color: white;
-  margin-left: 3%;
-}
-.cadreImage .cadreParagraphe p {
-  margin-left: 3%;
-  color: rgba(245, 245, 245, 0.7725490196);
-  font-size: 2.5rem;
 }
 
 .savoirPlus {
@@ -230,9 +230,6 @@
   -webkit-transition: all 0.6s ease-out;
   transition: all 0.6s ease-out;
   opacity: 0;
-  /* Apparition initiale */
-  -webkit-animation: appearFromLeft 0.8s ease-out 0.3s forwards;
-          animation: appearFromLeft 0.8s ease-out 0.3s forwards;
 }
 .cadre-service p {
   font-size: 1.5rem;
@@ -240,6 +237,11 @@
   transition: -webkit-transform 0.4s ease;
   transition: transform 0.4s ease;
   transition: transform 0.4s ease, -webkit-transform 0.4s ease;
+}
+.cadre-service {
+  /* Apparition initiale */
+  -webkit-animation: appearFromLeft 0.8s ease-out 0.3s forwards;
+          animation: appearFromLeft 0.8s ease-out 0.3s forwards;
 }
 .cadre-service:hover {
   -webkit-transform: translate(60px, -2px);
@@ -303,6 +305,15 @@ p {
   font-size: 1.5rem;
 }
 
+.cadreParagraphe h1 {
+  padding: 20px 0 0;
+  color: black;
+  font-size: 2.5rem;
+}
+.cadreParagraphe p {
+  margin-left: 3%;
+  color: rgba(245, 245, 245, 0.7725490196);
+}
 .cadreParagraphe {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -316,15 +327,6 @@ p {
   height: 340px;
   width: 50%;
   position: absolute;
-}
-.cadreParagraphe h1 {
-  padding: 20px 0 0;
-  color: black;
-  font-size: 2.5rem;
-}
-.cadreParagraphe p {
-  margin-left: 3%;
-  color: rgba(245, 245, 245, 0.7725490196);
 }
 
 .apropos h1 {
@@ -454,9 +456,6 @@ p {
   color: white;
 }
 
-.Compta {
-  margin-bottom: 200px;
-}
 .Compta h2 {
   text-align: center;
   font-weight: bolder;
@@ -470,6 +469,9 @@ p {
   width: 80%;
   margin: 0 auto;
   text-align: center;
+}
+.Compta {
+  margin-bottom: 200px;
 }
 
 .bt {
@@ -551,6 +553,48 @@ p {
             transform: translateY(0);
   }
 }
+.cadreImage .cadreParagraphe {
+  left: 0;
+}
+.cadreImage .cadreParagraphe h1,
+.cadreImage .cadreParagraphe p {
+  font-size: 1.5rem;
+}
+.cadreImage .cadreParagraphe {
+  height: 250px;
+  width: 100%;
+}
+
+.savoirPlus {
+  top: 730px;
+}
+
+.cadreFac button {
+  display: none;
+}
+
+.cookie-banner {
+  width: 57%;
+  height: 100px;
+  bottom: 830px;
+}
+.cookie-banner p {
+  font-size: 0.8rem;
+}
+.cookie-banner .buttons button:first-child {
+  background: none;
+  color: green;
+}
+.cookie-banner .buttons button:last-child {
+  background: none;
+  color: red;
+}
+
+.service-titre {
+  width: 100%;
+  font-size: 1rem;
+}
+
 .footer {
   background-color: #227235;
   padding: 50px 0;

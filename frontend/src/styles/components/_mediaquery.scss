@@ -1,0 +1,43 @@
+.cadreImage {
+  .cadreParagraphe {
+    left: 0;
+    h1,
+    p {
+      font-size: 1.5rem;
+    }
+    height: 250px;
+    width: 100%;
+  }
+}
+.savoirPlus {
+  top: 730px;
+}
+.cadreFac {
+  button {
+    display: none;
+  }
+}
+.cookie-banner {
+  width: 57%;
+  height: 100px;
+  bottom: 830px;
+  p {
+    font-size: 0.8rem;
+  }
+  .buttons {
+    button:first-child {
+      background: none;
+      color: green;
+    }
+  }
+  .buttons button:last-child {
+    background: none;
+    color: red;
+  }
+}
+
+  .service-titre {
+    width: 100%;
+    font-size: 1rem;
+  }
+
