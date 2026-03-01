@@ -44,8 +44,6 @@ const Form = () => {
       <div className="row g-0 shadow rounded-4 overflow-hidden">
         {/* Colonne formulaire */}
 
-        <h3 className="mb-4 text-secondary">Envoyez-nous un message</h3>
-
         <form onSubmit={handleSubmit}>
           <div className="row mb-3">
             <div className="col-sm-6">
@@ -76,7 +74,6 @@ const Form = () => {
                 required
               />
             </div>
-            <label for="pet-select">Vous etes ?</label>
           </div>
 
           <div className="mb-3">
@@ -96,7 +93,7 @@ const Form = () => {
 
           <div className="mb-4">
             <label htmlFor="message" className="form-label">
-              Message
+              Votre message
             </label>
             <textarea
               className="form-control"

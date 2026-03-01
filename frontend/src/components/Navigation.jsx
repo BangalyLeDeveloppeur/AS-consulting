@@ -55,7 +55,7 @@ const Navigation = () => {
                     isActive ? "nav-link active" : "nav-link"
                   }
                 >
-                  A PROPOS
+                  APROPOS
                 </NavLink>
               </li>
               {/* Menu déroulant Bootstrap natif */}

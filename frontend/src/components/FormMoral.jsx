@@ -44,7 +44,6 @@ const FormMoral = () => {
       <div className="row g-0 shadow rounded-4 overflow-hidden">
         {/* Colonne formulaire */}
 
-        <h3 className="mb-4 text-secondary">Envoyez-nous un message</h3>
 
         <form onSubmit={handleSubmit}>
           <div className="row mb-3">
@@ -109,7 +108,7 @@ const FormMoral = () => {
 
           <div className="mb-4">
             <label htmlFor="message" className="form-label">
-              Message
+              Votre message
             </label>
             <textarea
               className="form-control"
