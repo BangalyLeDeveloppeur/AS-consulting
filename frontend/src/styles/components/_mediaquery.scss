@@ -18,7 +18,6 @@
   }
 }
 .cookie-banner {
-  width: 57%;
   height: 100px;
   bottom: 830px;
   p {
@@ -36,8 +35,53 @@
   }
 }
 
-  .service-titre {
-    width: 100%;
-    font-size: 1rem;
+.service-titre {
+  width: 100%;
+  p {
+    font-size: 1.4rem;
   }
+}
+.choix {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
 
+  p {
+    padding: 0;
+  }
+  .choix-texte p {
+    padding: 12px;
+  }
+  .choix-texte {
+    width: 100%;
+
+    .btn-nous {
+      display: none;
+    }
+  }
+}
+.choix .choix-texte h2,
+.choix .choix-texte H3 {
+  width: 100%;
+}
+.choix .choix-texte h2 {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.servi {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ width: 100%;
+  padding: 0;
+}
+.footer-section {
+    text-align: center;
+}
+
+.footer {
+  .footer-columns.ftr {
+    padding: 0;
+  }
+}
