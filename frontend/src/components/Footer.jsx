@@ -8,7 +8,7 @@ const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer-columns ftr">
-        <div className="servi">
+        
           <div className="footer-section">
             <h4>Liens rapides</h4>
             <ul className="liens-rapides">
@@ -49,7 +49,7 @@ const Footer = () => {
               <button className="savoirPlusF">Contact</button>
             </Link>
           </div>
-        </div>
+       
       </div>
       <div className="footer-bottom">
         <p>TeraWeb. Tous droits réservés.</p>
