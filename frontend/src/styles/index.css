@@ -748,6 +748,54 @@ p {
     -webkit-filter: brightness(1.2);
             filter: brightness(1.2);
   }
+  .con {
+    position: relative;
+  }
+  .con img {
+    width: 100%;
+    height: 250px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    display: block;
+  }
+  .con .cadreParagraphe {
+    position: absolute;
+    top: 95%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+    padding: 15px;
+    color: white;
+  }
+  .con .cadreParagraphe h1 {
+    font-size: 1.5rem;
+  }
+  .apropos .aproposParagraphe {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    padding: 0 5px;
+  }
+  .apropos .aproposParagraphe p {
+    font-size: 1.3rem;
+    width: 100%;
+  }
+  button.btn-nous {
+    top: 1500px;
+  }
+  .avis-client {
+    text-align: center;
+    margin: 200px 0 20px 0;
+  }
+  .card.cadre-service.avis {
+    width: 100%;
+  }
+  .card.cadre-service.avis p {
+    font-size: 1.3rem;
+  }
 }
 .footer {
   background-color: black;
