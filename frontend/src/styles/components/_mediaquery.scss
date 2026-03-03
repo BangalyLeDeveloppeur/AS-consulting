@@ -193,30 +193,30 @@
   }
   ///////////////apropos////////////
   .con {
-  position: relative; // IMPORTANT
+    position: relative; // IMPORTANT
 
-  img {
-    width: 100%;
-    height: 250px;
-    object-fit: cover;
-    display: block;
-  }
+    img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      display: block;
+    }
 
-  .cadreParagraphe {
-    position: absolute; // 🔥 pas relative
-    top: 95%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 100%;
-    text-align: center;
-    padding: 15px;
-    color: white;
+    .cadreParagraphe {
+      position: absolute; //
+      top: 95%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 100%;
+      text-align: center;
+      padding: 15px;
+      color: white;
 
-    h1 {
-      font-size: 1.5rem;
+      h1 {
+        font-size: 1.5rem;
+      }
     }
   }
-}
 
   .apropos .aproposParagraphe {
     flex-direction: column-reverse;
@@ -232,12 +232,48 @@
   .avis-client {
     text-align: center;
     margin: 200px 0 20px 0;
-    
   }
   .card.cadre-service.avis {
     width: 100%;
     p {
       font-size: 1.3rem;
     }
+  }
+  //////////page comptable/////
+  .Compta {
+    position: relative;
+    img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .cadreParagraphe.comp {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      text-align: center;
+      padding: 15px;
+      color: white;
+
+      h1 {
+        font-size: 1.5rem;
+      }
+    }
+    .gestion {
+      width: 95%;
+      p {
+        font-size: 1.3rem;
+      }
+    }
+   button.btn-nous {
+  top: 1060px;
+  left: 50%;
+  transform: translateX(-50%);
+}
   }
 }
