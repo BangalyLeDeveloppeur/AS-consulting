@@ -21,7 +21,10 @@ const ConseilGest = () => {
           de vos actifs, avec une vision globale et une stratégie sur mesure.
         </p>
       </div>
+      <div className="conseilGestion">
+
       <button className="btn-nous bt">Prendre rendez-vous</button>
+      </div>
     </div>
   );
 };

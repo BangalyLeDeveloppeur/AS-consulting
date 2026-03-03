@@ -18,7 +18,9 @@ const GestionEntreprise = () => {
           solides.
         </p>
       </div>
-      <button className="btn-nous bt">Prendre rendez-vous</button>
+      <div className="gest">
+        <button className="btn-nous bt ">Prendre rendez-vous</button>
+      </div>
     </div>
   );
 };

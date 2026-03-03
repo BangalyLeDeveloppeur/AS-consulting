@@ -203,10 +203,9 @@
     }
 
     .cadreParagraphe {
-      position: absolute; //
-      top: 95%;
-      left: 50%;
-      transform: translate(-50%, -50%);
+      position: absolute;
+      top: 30%;
+
       width: 100%;
       text-align: center;
       padding: 15px;
@@ -270,10 +269,30 @@
         font-size: 1.3rem;
       }
     }
-   button.btn-nous {
-  top: 1060px;
-  left: 50%;
-  transform: translateX(-50%);
-}
+    button.btn-nous {
+      top: 1060px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+  ////gestion///
+  .creation-entreprise {
+    width: 95%;
+    p {
+      font-size: 1.3rem;
+    }
+  }
+  .gest button {
+    margin-top: -475px;
+  }
+  .fiscalite button {
+    margin-top: -220px;
+  }
+  .formation button {
+    margin-top: -280px;
+  }
+  ////Conseil et gestion////
+  .conseilGestion button {
+    margin-top: -400px;
   }
 }

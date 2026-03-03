@@ -24,7 +24,10 @@ const AccFiscale = () => {
           développement de l’entreprise, avec une équipe d’experts à ses côtés.
         </p>
       </div>
-      <button className="btn-nous bt">Prendre rendez-vous</button>
+      <div className="fiscalite">
+        <button className="btn-nous bt">Prendre rendez-vous</button>
+      </div>
+      
     </div>
   );
 };

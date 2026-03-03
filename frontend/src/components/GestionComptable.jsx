@@ -28,9 +28,8 @@ const GestionComptable = () => {
           comptabilité devient un atout, plus une contrainte.
         </p>
       </div>
-      
-        <button className="btn-nous bt">Prendre rendez-vous</button>
-     
+
+      <button className="btn-nous bt">Prendre rendez-vous</button>
     </div>
   );
 };

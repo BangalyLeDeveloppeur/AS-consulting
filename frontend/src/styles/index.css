@@ -760,10 +760,7 @@ p {
   }
   .con .cadreParagraphe {
     position: absolute;
-    top: 95%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
+    top: 30%;
     width: 100%;
     text-align: center;
     padding: 15px;
@@ -837,6 +834,24 @@ p {
     left: 50%;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
+  }
+  .creation-entreprise {
+    width: 95%;
+  }
+  .creation-entreprise p {
+    font-size: 1.3rem;
+  }
+  .gest button {
+    margin-top: -475px;
+  }
+  .fiscalite button {
+    margin-top: -220px;
+  }
+  .formation button {
+    margin-top: -280px;
+  }
+  .conseilGestion button {
+    margin-top: -400px;
   }
 }
 .footer {
