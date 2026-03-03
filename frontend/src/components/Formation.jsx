@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import styloImg from "../assets/image/stylo.png";
 const Formation = () => {
   return (
@@ -23,7 +24,9 @@ const Formation = () => {
         </p>
       </div>
       <div className="formation">
+        <Link to="/form">
         <button className="btn-nous bt">Prendre rendez-vous</button>
+        </Link>
       </div>
     </div>
   );

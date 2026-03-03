@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Brochure from "../assets/image/Brochure.png";
 
 const GestionEntreprise = () => {
@@ -19,7 +20,9 @@ const GestionEntreprise = () => {
         </p>
       </div>
       <div className="gest">
+        <Link to= "/form">
         <button className="btn-nous bt ">Prendre rendez-vous</button>
+        </Link>
       </div>
     </div>
   );

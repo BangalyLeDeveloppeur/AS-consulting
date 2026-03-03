@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Hommes from "../assets/image/hommes.png";
 
 const ConseilGest = () => {
@@ -16,14 +17,16 @@ const ConseilGest = () => {
         <p>
           Chez AS-consulting, nous comprenons que la réussite de votre
           entreprise est indissociable de la construction et de la protection de
-          votre patrimoine personnel. <br /> Nous vous accompagnons au-delà du cadre
-          purement entrepreneurial pour sécuriser et faire fructifier l'ensemble
-          de vos actifs, avec une vision globale et une stratégie sur mesure.
+          votre patrimoine personnel. <br /> Nous vous accompagnons au-delà du
+          cadre purement entrepreneurial pour sécuriser et faire fructifier
+          l'ensemble de vos actifs, avec une vision globale et une stratégie sur
+          mesure.
         </p>
       </div>
       <div className="conseilGestion">
-
-      <button className="btn-nous bt">Prendre rendez-vous</button>
+        <Link to="/form">
+          <button className="btn-nous bt">Prendre rendez-vous</button>
+        </Link>
       </div>
     </div>
   );

@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import axios from "axios";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft, faArrowRight } from "@fortawesome/free-solid-svg-icons";
@@ -35,7 +36,7 @@ const Slide = () => {
   };
   const prevSlide = () => {
     setCurrentIndex(
-      (prevIndex) => (prevIndex - 1 + slidePhoto.length) % slidePhoto.length
+      (prevIndex) => (prevIndex - 1 + slidePhoto.length) % slidePhoto.length,
     );
   };
   const currentPhoto = slidePhoto[currentIndex];
@@ -47,7 +48,8 @@ const Slide = () => {
         <div className="cadreImage">
           {currentPhoto && (
             <>
-              <img className="img-fluid"
+              <img
+                className="img-fluid"
                 src={`http://localhost:5000${currentPhoto.image}`}
                 alt={currentPhoto.description}
               />
@@ -67,7 +69,9 @@ const Slide = () => {
           <FontAwesomeIcon icon={faArrowRight} />
         </button>
       </div>
-      <button className="savoirPlus">Prendre rendez-vous</button>
+      <Link to="/form">
+        <button className="savoirPlus">Prendre rendez-vous</button>
+      </Link>
     </div>
   );
 };

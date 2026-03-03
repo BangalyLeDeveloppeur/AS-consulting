@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Hommes from "../assets/image/hommes.png";
 
 const AccFiscale = () => {
@@ -25,9 +26,11 @@ const AccFiscale = () => {
         </p>
       </div>
       <div className="fiscalite">
+        <Link to="/form">
         <button className="btn-nous bt">Prendre rendez-vous</button>
+        </Link>
       </div>
-      
+
     </div>
   );
 };

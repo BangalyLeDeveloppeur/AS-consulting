@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import CalcultriceImg from "../assets/image/Calculatrice.png";
 const GestionComptable = () => {
   return (
@@ -28,8 +29,9 @@ const GestionComptable = () => {
           comptabilité devient un atout, plus une contrainte.
         </p>
       </div>
-
-      <button className="btn-nous bt">Prendre rendez-vous</button>
+      <Link to="/form">
+        <button className="btn-nous bt">Prendre rendez-vous</button>
+      </Link>
     </div>
   );
 };
