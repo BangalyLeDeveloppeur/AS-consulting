@@ -1,6 +1,7 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import axios from "axios";
+import { Link } from "react-router-dom";
 
 const Services = () => {
   const [services, setServices] = useState([]);
@@ -36,9 +37,24 @@ const Services = () => {
                   <h2 className="card-title">{service.titre}</h2>
                   <p className="card-text">{service.description}</p>
                   <div className="mt-auto pt-3">
-                    <button className="btn btn decouvrez">
-                      Découvrir <i className="bi bi-chevron-right ms-1"></i>
-                    </button>
+                    <Link
+                      to={
+                        service.id === 3
+                          ? "/comptabilite"
+                          : service.id === 4
+                            ? "/entreprise"
+                            : service.id === 5
+                              ? "/fiscal"
+                              : service.id === 6
+                                ? "/conseil"
+                                : service.id === 7
+                                  ? "/formation"
+                                  : "/"
+                      }
+                      className="btn btn decouvrez"
+                    >
+                      Découvrir
+                    </Link>
                   </div>
                 </div>
               </div>
