@@ -74,6 +74,20 @@ const Form = () => {
                 required
               />
             </div>
+            <div className="col-sm-6">
+              <label htmlFor="prenom" className="form-label">
+                téléphone
+              </label>
+              <input
+                type="text"
+                className="form-control"
+                id="telephone"
+                name="telephone"
+                value={prenom}
+                onChange={(e) => setPrenom(e.target.value)}
+                required
+              />
+            </div>
           </div>
 
           <div className="mb-3">

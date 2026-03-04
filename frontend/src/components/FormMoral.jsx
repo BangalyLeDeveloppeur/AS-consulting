@@ -44,7 +44,6 @@ const FormMoral = () => {
       <div className="row g-0 shadow rounded-4 overflow-hidden">
         {/* Colonne formulaire */}
 
-
         <form onSubmit={handleSubmit}>
           <div className="row mb-3">
             <div className="col-sm-6">
@@ -84,6 +83,20 @@ const FormMoral = () => {
                 className="form-control"
                 id="prenom"
                 name="prenom"
+                value={prenom}
+                onChange={(e) => setPrenom(e.target.value)}
+                required
+              />
+            </div>
+            <div className="col-sm-6">
+              <label htmlFor="prenom" className="form-label">
+                téléphone
+              </label>
+              <input
+                type="text"
+                className="form-control"
+                id="telephone"
+                name="telephone"
                 value={prenom}
                 onChange={(e) => setPrenom(e.target.value)}
                 required

@@ -31,7 +31,7 @@ const Services = () => {
   return (
     <div>
       <section className="admin-section">
-        <h1 className="titre"> Home du services</h1>
+        <h1 className="titre"> Nos services</h1>
 
         <form onSubmit={handleSubmit}>
           <div>

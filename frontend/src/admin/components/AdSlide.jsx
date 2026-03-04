@@ -39,7 +39,7 @@ const AdSlide = () => {
   return (
     <div>
       <section className="admin-section">
-        <h1 className="titre"> Home du slide d'Accueil</h1>
+        <h1 className="titre"> Home du slide d'accueil</h1>
 
         <form onSubmit={handleSubmit}>
           <div>
