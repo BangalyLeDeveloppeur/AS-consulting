@@ -1,10 +1,12 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import axios from "axios";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 const FormMoral = () => {
-  const [nom, setNom] = useState("");
-  const [prenom, setPrenom] = useState("");
+  const [nomEntreprise, setNomEntreprise] = useState("");
+  const [secteurActivite, setSecteurActivite] = useState("");
+  const [siegeEntreprise, setSiegeEntreprise] = useState("");
+  const [telephone, setTelephone] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
   const [notice, setNotice] = useState("");
@@ -12,107 +14,93 @@ const FormMoral = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    const formData = new FormData();
-    formData.append("nom", nom);
-    formData.append("prenom", prenom);
-    formData.append("message", message);
-    formData.append("email", email);
+    const data = {
+      type_personne: "morale",
+      nom_entreprise: nomEntreprise,
+      secteur_activite: secteurActivite,
+      siege_entreprise: siegeEntreprise,
+      telephone,
+      email,
+      message,
+    };
 
     try {
-      await axios.post("http://localhost:5000/api/contact", formData, {});
+      await axios.post("http://localhost:5000/api/contacts", data);
 
-      setNom("");
-      setPrenom("");
+      // Reset
+      setNomEntreprise("");
+      setSecteurActivite("");
+      setSiegeEntreprise("");
+      setTelephone("");
       setEmail("");
       setMessage("");
 
       setNotice(
-        "Merci d'avoir nous contacter notre équipe vous contactera dans les plus brefs délais !",
+        "Merci de nous avoir contactés. Notre équipe vous répondra rapidement.",
       );
 
-      setTimeout(() => {
-        setNotice("");
-      }, 5000);
+      setTimeout(() => setNotice(""), 5000);
     } catch (error) {
-      console.log("Une erreur s'est produite", error);
-      setNotice("Une erreur s'est produite lors de l'envoi du formulaire.");
+      console.log("Erreur :", error);
+      setNotice("Une erreur s'est produite lors de l'envoi.");
     }
   };
 
   return (
     <div className="row justify-content-center">
-      <div className="row g-0 shadow rounded-4 overflow-hidden">
-        {/* Colonne formulaire */}
-
+      <div className="shadow rounded-4 p-4 bg-white">
         <form onSubmit={handleSubmit}>
           <div className="row mb-3">
-            <div className="col-sm-6">
-              <label htmlFor="nom" className="form-label">
-                Nom de votre entreprise
-              </label>
+            <div className="col-md-6">
+              <label className="form-label">Nom de l'entreprise</label>
               <input
                 type="text"
                 className="form-control"
-                id="nom"
-                name="nom"
-                value={nom}
-                required
-                onChange={(e) => setNom(e.target.value)}
-              />
-            </div>
-            <div className="col-sm-6">
-              <label htmlFor="prenom" className="form-label">
-                Secteur d'activité
-              </label>
-              <input
-                type="text"
-                className="form-control"
-                id="prenom"
-                name="prenom"
-                value={prenom}
-                onChange={(e) => setPrenom(e.target.value)}
+                value={nomEntreprise}
+                onChange={(e) => setNomEntreprise(e.target.value)}
                 required
               />
             </div>
-            <div className="col-sm-6">
-              <label htmlFor="prenom" className="form-label">
-                Siège de votre entreprise
-              </label>
+
+            <div className="col-md-6">
+              <label className="form-label">Secteur d'activité</label>
               <input
                 type="text"
                 className="form-control"
-                id="prenom"
-                name="prenom"
-                value={prenom}
-                onChange={(e) => setPrenom(e.target.value)}
+                value={secteurActivite}
+                onChange={(e) => setSecteurActivite(e.target.value)}
                 required
               />
             </div>
-            <div className="col-sm-6">
-              <label htmlFor="prenom" className="form-label">
-                téléphone
-              </label>
+
+            <div className="col-md-6 mt-3">
+              <label className="form-label">Siège de l'entreprise</label>
               <input
                 type="text"
                 className="form-control"
-                id="telephone"
-                name="telephone"
-                value={prenom}
-                onChange={(e) => setPrenom(e.target.value)}
+                value={siegeEntreprise}
+                onChange={(e) => setSiegeEntreprise(e.target.value)}
+                required
+              />
+            </div>
+
+            <div className="col-md-6 mt-3">
+              <label className="form-label">Téléphone</label>
+              <input
+                type="text"
+                className="form-control"
+                value={telephone}
+                onChange={(e) => setTelephone(e.target.value)}
                 required
               />
             </div>
           </div>
 
           <div className="mb-3">
-            <label htmlFor="email" className="form-label">
-              E-mail
-            </label>
+            <label className="form-label">E-mail</label>
             <input
               type="email"
               className="form-control"
-              id="email"
-              name="email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               required
@@ -120,13 +108,9 @@ const FormMoral = () => {
           </div>
 
           <div className="mb-4">
-            <label htmlFor="message" className="form-label">
-              Votre message
-            </label>
+            <label className="form-label">Votre message</label>
             <textarea
               className="form-control"
-              id="message"
-              name="message"
               rows="4"
               value={message}
               onChange={(e) => setMessage(e.target.value)}
@@ -138,12 +122,13 @@ const FormMoral = () => {
             <small className="text-muted">
               * Tous les champs sont obligatoires
             </small>
-            <button type="submit" className="btn btn-primary px-4 py-2">
-              <i className="bi bi-paper-plane me-2"></i>
+
+            <button type="submit" className="btn btn-primary px-4">
               Envoyer
             </button>
           </div>
-          <p>{notice}</p>
+
+          {notice && <p className="mt-3 text-success">{notice}</p>}
         </form>
       </div>
     </div>

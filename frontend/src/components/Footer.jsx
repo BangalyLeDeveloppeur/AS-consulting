@@ -8,22 +8,23 @@ const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer-columns ftr">
+
+        {/* Liens rapides */}
         <div className="footer-section">
           <h4>Liens rapides</h4>
           <ul className="liens-rapides">
-            <li className="liens-rapides">
+            <li>
               <Link to="/">Home</Link>
             </li>
-            <li className="liens-rapides">
+            <li>
               <Link to="/Apropos">A propos</Link>
             </li>
-            <li className="liens-rapides">
-              <li className="liens-rapides">
-                <Link to="/form">Contact</Link>
-              </li>
+            <li>
+              <Link to="/form">Contact</Link>
             </li>
           </ul>
         </div>
+
         {/* Adresse */}
         <div className="footer-section">
           <h4>Adresse</h4>
@@ -33,30 +34,41 @@ const Footer = () => {
               +224-669-03-02-19 <br />
               +224-612-14-24-24
             </li>
-            <li>Kobayah derière lsa station total</li>
-            <li>Info@ASconsulting.com</li>
+            <li>Kobayah derrière la station Total</li>
+            <li>Info@asconsulting.com</li>
             <li>Siège Kobayah</li>
           </ul>
         </div>
 
-        {/* Liens rapides */}
-
         {/* Réseaux sociaux */}
         <div className="footer-section">
           <h4>Réseaux sociaux</h4>
-          <div className="footer-reseaux">
-            <a href="https://www.facebook.com/share/p/17JDDzDEKd/">
 
-            <img src={Logofacebook} alt="Facebook" width="30" />
+          <div className="footer-reseaux">
+            <a
+              href="https://www.facebook.com/share/p/17JDDzDEKd/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src={Logofacebook} alt="Facebook" width="30" />
             </a>
-            <img src={LogoWhatsapp} alt="instatgram" width="30" />
-            <img src={LogoInsta} alt="instatgram" width="30" />
+
+            <a href="#">
+              <img src={LogoWhatsapp} alt="Whatsapp" width="30" />
+            </a>
+
+            <a href="#">
+              <img src={LogoInsta} alt="Instagram" width="30" />
+            </a>
           </div>
-          <Link to={"/form"}>
-            <button className="savoirPlusF">Contact</button>
+
+          <Link to="/form" className="savoirPlusF">
+            Contact
           </Link>
         </div>
+
       </div>
+
       <div className="footer-bottom">
         <p>TeraWeb. Tous droits réservés.</p>
       </div>

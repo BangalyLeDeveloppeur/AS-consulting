@@ -1,11 +1,12 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import axios from "axios";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 const Form = () => {
+  const [email, setEmail] = useState("");
   const [nom, setNom] = useState("");
   const [prenom, setPrenom] = useState("");
-  const [email, setEmail] = useState("");
+  const [telephone, setTelephone] = useState("");
   const [message, setMessage] = useState("");
   const [notice, setNotice] = useState("");
 
@@ -15,14 +16,17 @@ const Form = () => {
     const formData = new FormData();
     formData.append("nom", nom);
     formData.append("prenom", prenom);
+    formData.append("telephone", telephone);
     formData.append("message", message);
     formData.append("email", email);
 
     try {
-      await axios.post("http://localhost:5000/api/contact", formData, {});
+      await axios.post("http://localhost:5000/api/contacts", formData);
 
+      // Réinitialisation de tous les champs
       setNom("");
       setPrenom("");
+      setTelephone("");
       setEmail("");
       setMessage("");
 
@@ -43,7 +47,6 @@ const Form = () => {
     <div className="row justify-content-center">
       <div className="row g-0 shadow rounded-4 overflow-hidden">
         {/* Colonne formulaire */}
-
         <form onSubmit={handleSubmit}>
           <div className="row mb-3">
             <div className="col-sm-6">
@@ -74,20 +77,22 @@ const Form = () => {
                 required
               />
             </div>
-            <div className="col-sm-6">
-              <label htmlFor="prenom" className="form-label">
-                téléphone
-              </label>
-              <input
-                type="text"
-                className="form-control"
-                id="telephone"
-                name="telephone"
-                value={prenom}
-                onChange={(e) => setPrenom(e.target.value)}
-                required
-              />
-            </div>
+          </div>
+
+          {/* Champ téléphone corrigé */}
+          <div className="mb-3">
+            <label htmlFor="telephone" className="form-label">
+              Téléphone
+            </label>
+            <input
+              type="tel"
+              className="form-control"
+              id="telephone"
+              name="telephone"
+              value={telephone}
+              onChange={(e) => setTelephone(e.target.value)}
+              required
+            />
           </div>
 
           <div className="mb-3">
@@ -129,7 +134,13 @@ const Form = () => {
               Envoyer
             </button>
           </div>
-          <p>{notice}</p>
+
+          {/* Message de notification */}
+          {notice && (
+            <div className="alert alert-info mt-3" role="alert">
+              {notice}
+            </div>
+          )}
         </form>
       </div>
     </div>
