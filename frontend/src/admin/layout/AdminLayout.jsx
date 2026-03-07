@@ -1,5 +1,5 @@
 import react from 'react';
-import AdminNavigation from '../component/AdminNavigation.jsx';
+import AdminNavigation from '../components/AdminNavigation.jsx';
 import React from 'react';
 import { Outlet } from 'react-router-dom';
 
