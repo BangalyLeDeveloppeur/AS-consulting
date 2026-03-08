@@ -1,6 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import Logoas from "../assets/image/Logo.png";
+import Logoas from "../assets/image/Logo.webp";
 import LogoFacebook from "../assets/image/logos_facebook.png";
 import Logowthatsapp from "../assets/image/logos_whatsapp-icon.png";
 import LogoLinkedin from "../assets/image/skill-icons_linkedin.png";

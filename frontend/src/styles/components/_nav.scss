@@ -1,49 +1,66 @@
 .navMenu {
-  margin-right: 4% !important;
+  margin-right: 4%;
+  display: flex;
   gap: 50px;
-  background: white;
 
   li {
+    list-style: none;
     font-size: 0.9rem;
-    color: black;
 
     a {
       text-decoration: none;
       color: black;
-      font-size: 1.5rem;
+      font-size: 1.2rem;
+      transition: color 0.3s ease;
+    }
+
+    &:hover a {
+      color: #227235;
     }
   }
-  :hover {
-    background: rgba(85, 80, 80, 0.329);
-    color: #227235;
-    transition: all 0.3s ease;
-  }
 }
+
+/* Logo */
 .asLlogo {
   img {
-    width: 50%;
+    width: 200px;
+    height: 120px;
+    object-fit: contain;
   }
 }
+
+/* Réseaux sociaux */
 .lienSociaux {
   display: flex;
   align-items: center;
-  gap: 20px;
-  width: 20%;
-  margin: 10px 0 0 0;
+  gap: 15px;
+  margin-left: auto;
+  margin-top: 10px;
 
-  margin-left: auto !important;
   img {
-    width: 10%;
+    width: 28px;
+    height: 28px;
+    object-fit: contain;
   }
 }
+
+/* bouton menu */
 .bmn {
-  background-color: transparent !important;
+  background-color: transparent;
   padding: 0;
-  margin: 0 0 70px 0;
+  margin-bottom: 70px;
 }
-.menu-deroulent li a {
-  font-weight: lighter;
-  color: rgba(0, 0, 0, 0.918);
-  text-decoration: none;
-  font-size: 1.2rem;
+
+/* menu déroulant */
+.menu-deroulent {
+  li {
+    list-style: none;
+
+    a {
+      font-weight: 400;
+      color: rgba(0, 0, 0, 0.9);
+      text-decoration: none;
+      font-size: 1.1rem;
+    }
+  }
 }

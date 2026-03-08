@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import NousImg from "../assets/image/Black White Bold Modern Studio Logo (1) 1.png";
+import NousImg from "../assets/image/FeuileCalcule.webp";
 
 const QuiSomme = () => {
   return (

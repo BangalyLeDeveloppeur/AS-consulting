@@ -31,7 +31,7 @@ const AdminNavigation = () => {
         </NavLink>
 
         <NavLink
-          to="/admin/pageadmin/services"
+          to="/admin/pageadmin/homeadmin"
           className={({ isActive }) => (isActive ? "nav-active" : "")}
         >
           <li>Services</li>

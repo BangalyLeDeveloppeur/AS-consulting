@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import styloImg from "../assets/image/stylo.png";
+import styloImg from "../assets/image/stylo.webp";
 const Formation = () => {
   return (
     <div className="Compta">

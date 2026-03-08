@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Hommes from "../assets/image/hommes.png";
+import Hommes from "../assets/image/hommes.webp";
 
 const ConseilGest = () => {
   return (

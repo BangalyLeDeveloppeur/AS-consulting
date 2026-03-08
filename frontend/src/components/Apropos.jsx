@@ -1,5 +1,5 @@
 import React from "react";
-import feuilleMain from "../assets/image/main.png";
+import feuilleMain from "../assets/image/main.webp";
 
 const Apropos = () => {
   return (

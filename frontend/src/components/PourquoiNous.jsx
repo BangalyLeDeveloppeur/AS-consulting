@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import femmmeSourientes from "../assets/image/Femmes.png";
+import femmmeSourientes from "../assets/image/Femmes.webp";
 
 const PourquoiNous = () => {
   return (

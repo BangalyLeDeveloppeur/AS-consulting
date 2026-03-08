@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import CalcultriceImg from "../assets/image/Calculatrice.png";
+import CalcultriceImg from "../assets/image/Calculatrice.webp";
 const GestionComptable = () => {
   return (
     <div className="Compta">

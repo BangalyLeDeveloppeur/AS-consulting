@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Brochure from "../assets/image/Brochure.png";
+import Brochure from "../assets/image/Brochure.webp";
 
 const GestionEntreprise = () => {
   return (

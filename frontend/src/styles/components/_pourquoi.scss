@@ -10,15 +10,18 @@
   display: flex;
   gap: 20px;
   padding: 0 70px 50px 30px;
-  
+
   img {
-    width: 100%;
+    max-width: 100%;
+    height: auto;
   }
   .choix-texte {
     background: rgba(3, 2, 2, 0.582);
     width: 65%;
     padding: 15px 0 0 0;
-    H1, h2, H3 {
+    H1,
+    h2,
+    H3 {
       display: flex;
       justify-content: center;
       align-items: center;
@@ -30,8 +33,7 @@
       font-size: 1.5rem;
       margin: 25px 0;
       text-align: center;
-      
-     
+
       padding: 0 50px;
     }
   }
