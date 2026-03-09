@@ -19,7 +19,7 @@ const QuiSomme = () => {
             accompagnement en français, en anglais et en langues nationales.
           </p>
           <Link to="/form">
-            <button className="btn-nous">Prendre rendez-vous</button>
+            <button className="btn-nous prendreRendeVous">Prendre rendez-vous</button>
           </Link>
         </div>
         <img src={NousImg} alt="main sur ordinateur" />

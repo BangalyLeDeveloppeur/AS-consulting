@@ -27,7 +27,7 @@ const PourquoiNous = () => {
             accompagner votre croissance et vos ambitions entrepreneuriales.
           </p>
           <Link to="/form">
-            <button className="savoirPlus">Prendre rendez-vous</button>
+            <button className="savoirPlus rendezVous">Prendre rendez-vous</button>
           </Link>
         </div>
         <div>

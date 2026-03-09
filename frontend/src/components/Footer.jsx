@@ -46,7 +46,7 @@ const Footer = () => {
 
           <div className="footer-reseaux">
             <a
-              href="https://www.facebook.com/share/p/17JDDzDEKd/"
+              href="https://www.facebook.com/share/1AeAq771LH/?mibextid=wwXIfr/"
               target="_blank"
               rel="noopener noreferrer"
             >

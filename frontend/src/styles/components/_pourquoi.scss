@@ -26,7 +26,7 @@
       justify-content: center;
       align-items: center;
       width: 90%;
-      color: white;
+     color: var(--bs-heading-color);
     }
     p {
       color: white;
@@ -36,5 +36,10 @@
 
       padding: 0 50px;
     }
+
+    button.savoirPlus.rendezVous {
+        top: 61%;
+    }
   }
+
 }
