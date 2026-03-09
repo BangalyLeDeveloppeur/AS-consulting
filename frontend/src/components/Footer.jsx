@@ -8,7 +8,6 @@ const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer-columns ftr">
-
         {/* Liens rapides */}
         <div className="footer-section">
           <h4>Liens rapides</h4>
@@ -35,7 +34,7 @@ const Footer = () => {
               +224-612-14-24-24
             </li>
             <li>Kobayah derrière la station Total</li>
-            <li>Info@asconsulting.com</li>
+            <li>Contact@asconsulting-guinea.com</li>
             <li>Siège Kobayah</li>
           </ul>
         </div>
@@ -53,7 +52,11 @@ const Footer = () => {
               <img src={Logofacebook} alt="Facebook" width="30" />
             </a>
 
-            <a href="#">
+            <a
+              href="https://wa.me/224669030219"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <img src={LogoWhatsapp} alt="Whatsapp" width="30" />
             </a>
 
@@ -66,7 +69,6 @@ const Footer = () => {
             Contact
           </Link>
         </div>
-
       </div>
 
       <div className="footer-bottom">

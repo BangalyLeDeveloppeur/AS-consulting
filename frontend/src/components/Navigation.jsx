@@ -3,15 +3,25 @@ import { NavLink } from "react-router-dom";
 import Logoas from "../assets/image/Logo.webp";
 import LogoFacebook from "../assets/image/logos_facebook.png";
 import Logowthatsapp from "../assets/image/logos_whatsapp-icon.png";
-import LogoLinkedin from "../assets/image/skill-icons_linkedin.png";
 
 const Navigation = () => {
   return (
     <div>
       <div className="lienSociaux">
-        <img src={LogoFacebook} alt="logo facebook" />
-        <img src={Logowthatsapp} alt="logo facebook" />
-        <img src={LogoLinkedin} alt="logo facebook" />
+        <a
+          href="https://www.facebook.com/share/1AeAq771LH/?mibextid=wwXIfr/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src={LogoFacebook} alt="logo facebook" />
+        </a>
+        <a
+          href="https://wa.me/224669030219"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src={Logowthatsapp} alt="logo facebook" />
+        </a>
       </div>
       <nav className="navbar navbar-expand-lg navbar-light bg-light bmn">
         <div className="container-fluid">
