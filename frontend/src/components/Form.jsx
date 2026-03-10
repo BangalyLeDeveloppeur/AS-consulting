@@ -47,7 +47,7 @@ const Form = () => {
     <div className="row justify-content-center">
       <div className="row g-0 shadow rounded-4 overflow-hidden">
         {/* Colonne formulaire */}
-        <form onSubmit={handleSubmit}>
+        <form onSubmit={handleSubmit} className="PersonnePhysique">
           <div className="row mb-3">
             <div className="col-sm-6">
               <label htmlFor="nom" className="form-label">

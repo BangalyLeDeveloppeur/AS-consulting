@@ -7,10 +7,11 @@ const Login = () => {
   const navigate = useNavigate();
   const { setToken } = useAuth();
 
+
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [message, setMessage] = useState("");
-  const [loading, setLoading] = useState(false); // 👈 Ajoute un état loading
+  const [loading, setLoading] = useState(false); 
 
   const handleLogin = async (e) => {
     e.preventDefault();

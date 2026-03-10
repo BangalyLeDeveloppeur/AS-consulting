@@ -1,53 +1,62 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+////////////////////////////////
 
-.btn-nous {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 60px;
-  width: 250px;
-  left: 17%;
-  background: #227235;
-  border: none;
-  position: absolute;
 
-  border-radius: 8px;
-  color: white;
-  font-size: 1.5rem;
-  cursor: pointer;
-
-  transition: all 0.3s ease;
-  p {
-    margin: 0;
+//////////////////////////
+  .btn-nous {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    width: 250px;
+    left: 17%;
+    background: #227235;
+    border: none;
+    position: absolute;
+    
+    border-radius: 8px;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    
+    transition: all 0.3s ease;
+    p {
+      margin: 0;
+    }
   }
-}
-.btn-nous:hover {
-  background: #014ab0;
-  transform: scale(1.05);
-}
-.decouvrez {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 50px;
-  width: 100%;
 
-  left: 0%;
-  background: #227235;
-  border: none;
-  position: absolute;
-  top: 270px;
-  border-radius: 8px;
-  color: white;
-  font-size: 1.5rem;
-  cursor: pointer;
-
-  transition: all 0.3s ease;
-  p {
-    margin: 0;
+  .btn-nous:hover {
+    background: #014ab0;
+    transform: scale(1.05);
   }
-}
+  .decouvrez {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+    
+    left: 0%;
+    background: #227235;
+    border: none;
+    position: absolute;
+    top: 280px;
+    border-radius: 8px;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    
+    transition: all 0.3s ease;
+    p {
+      margin: 0;
+    }
+  }
+
 .decouvrez:hover {
   background: #014ab0;
   transform: scale(1.05);
 }
-

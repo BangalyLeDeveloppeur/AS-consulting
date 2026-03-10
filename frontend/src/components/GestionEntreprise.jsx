@@ -12,7 +12,7 @@ const GestionEntreprise = () => {
       <h2>Création est gestion d’entreprise</h2>
       <div className="creation-entreprise">
         <p>
-          AS-Consulting vous accompagne dès la création de votre entreprise en
+          AS-consulting vous accompagne dès la création de votre entreprise en
           simplifiant le choix du statut juridique et les formalités
           administratives. Grâce à notre expertise, vous démarrez rapidement,
           évitez les erreurs coûteuses et lancez votre activité sur des bases

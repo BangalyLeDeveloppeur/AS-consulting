@@ -24,7 +24,7 @@ const Services = () => {
       <div className="service-titre">
         <h1>Nos services</h1>
         <p>
-          Au-delà des chiffres, AS consulting est un cabinet d’expertise <br />{" "}
+          Au-delà des chiffres, AS-consulting est un cabinet d’expertise <br />{" "}
           comptable offrant un service humain et se soucie de votre succès.
         </p>
       </div>

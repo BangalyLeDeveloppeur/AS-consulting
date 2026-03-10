@@ -1,4 +1,10 @@
 @charset "UTF-8";
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
 .btn-nous {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -48,7 +54,7 @@
   background: #227235;
   border: none;
   position: absolute;
-  top: 270px;
+  top: 280px;
   border-radius: 8px;
   color: white;
   font-size: 1.5rem;
@@ -119,7 +125,6 @@
 .bmn {
   background-color: transparent;
   padding: 0;
-  margin-bottom: 70px;
 }
 
 /* menu déroulant */
@@ -170,7 +175,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  top: 60%;
+  top: 58%;
   left: 5%;
   bottom: 130px;
   height: 340px;
@@ -191,7 +196,7 @@
           align-items: center;
   height: 60px;
   width: 250px;
-  top: 85%;
+  top: 79%;
   left: 20%;
   background: #227235;
   border: none;
@@ -320,7 +325,7 @@ p {
 }
 
 .cadreParagraphe h1 {
-  padding: 20px 0 0;
+  padding: 100px 0 0;
   color: black;
   font-size: 2.5rem;
 }
@@ -373,6 +378,7 @@ p {
 }
 .apropos .aproposParagraphe button.btn-nous.prendreRendeVous {
   top: 157%;
+  left: 19%;
 }
 .apropos p {
   font-size: 1.5rem;
@@ -438,13 +444,12 @@ p {
   padding: 0 70px 50px 30px;
 }
 .choix img {
-  max-width: 100%;
+  width: 100%;
   height: auto;
 }
 .choix .choix-texte {
   background: rgba(3, 2, 2, 0.582);
-  width: 65%;
-  padding: 15px 0 0 0;
+  padding: 40px 0 0 0;
 }
 .choix .choix-texte H1,
 .choix .choix-texte h2,
@@ -458,7 +463,6 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 90%;
   color: var(--bs-heading-color);
 }
 .choix .choix-texte p {
@@ -469,7 +473,12 @@ p {
   padding: 0 50px;
 }
 .choix .choix-texte button.savoirPlus.rendezVous {
-  top: 61%;
+  top: 73%;
+  left: 23%;
+}
+
+.PersonnePhysique {
+  padding: 24px;
 }
 
 .comp {
@@ -600,7 +609,6 @@ p {
   .cadreImage .cadreParagraphe p {
     font-size: 1rem;
   }
-  /* 🔥 On enlève le top fixe dangereux */
   .savoirPlus {
     position: relative;
     display: none;
@@ -802,9 +810,6 @@ p {
     font-size: 1.3rem;
     width: 100%;
   }
-  button.btn-nous {
-    top: 1840px;
-  }
   .avis-client {
     text-align: center;
     margin: 200px 0 20px 0;
@@ -863,17 +868,11 @@ p {
   .creation-entreprise p {
     font-size: 1.3rem;
   }
-  .gest button {
-    margin-top: -475px;
-  }
   .fiscalite button {
     margin-top: -220px;
   }
   .formation button {
-    margin-top: -280px;
-  }
-  .conseilGestion button {
-    margin-top: -400px;
+    margin-top: 20px;
   }
 }
 body {
@@ -1095,6 +1094,9 @@ button:hover {
   background-color: black;
   padding: 50px 0;
   margin-top: 100px;
+}
+.footer a {
+  text-decoration: none;
 }
 .footer .footer-columns {
   display: -webkit-box;

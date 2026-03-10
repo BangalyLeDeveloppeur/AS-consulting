@@ -72,7 +72,7 @@ const Footer = () => {
       </div>
 
       <div className="footer-bottom">
-        <p>TeraWeb. Tous droits réservés.</p>
+        <span>TeraWeb. Tous droits réservés.</span>
       </div>
     </footer>
   );

@@ -24,7 +24,7 @@ const CookieBanner = () => {
   return (
     <div className="cookie-banner">
       <p>
-        AS Consulting utilise des cookies pour assurer le bon fonctionnement du
+        As-consulting utilise des cookies pour assurer le bon fonctionnement du
         site et améliorer votre expérience de navigation.
       </p>
 

@@ -25,7 +25,7 @@
     }
   }
 
-  /* 🔥 On enlève le top fixe dangereux */
+  
   .savoirPlus {
     position: relative;
    display: none;
@@ -177,7 +177,7 @@
     width: 50%;
     gap: 20px;
     padding: 10px 0;
-    //background: #111;
+  
 
     img {
       width: 28px;
@@ -225,9 +225,9 @@
       width: 100%;
     }
   }
-  button.btn-nous {
-    top: 1840px;
-  }
+  //button.btn-nous {
+    //top: 1840px;
+  //}
   .avis-client {
     text-align: center;
     margin: 200px 0 20px 0;
@@ -282,17 +282,17 @@
       font-size: 1.3rem;
     }
   }
-  .gest button {
-    margin-top: -475px;
-  }
+  //.gest button {
+    //margin-top: -475px;
+  //}
   .fiscalite button {
     margin-top: -220px;
   }
   .formation button {
-    margin-top: -280px;
+    margin-top: 20px;
   }
   ////Conseil et gestion////
-  .conseilGestion button {
-    margin-top: -400px;
-  }
+  //.conseilGestion button {
+    //margin-top: -400px;
+  //}
 }
