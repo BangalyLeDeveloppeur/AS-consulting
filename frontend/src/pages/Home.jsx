@@ -6,7 +6,7 @@ import PourquoiNous from "../components/PourquoiNous.jsx";
 
 const Home = () => {
   return (
-    <div>
+    <div className="homeContenair">
       <Slide />
       <Services />
       <PourquoiNous />

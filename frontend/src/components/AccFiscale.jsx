@@ -15,10 +15,10 @@ const AccFiscale = () => {
       <h2>Conseil fiscal</h2>
       <div className="creation-entreprise">
         <p>
-          AS-consulting est un cabinet d’accompagnement complet qui prend en
+          AS Consulting est un cabinet d’accompagnement complet qui prend en
           charge toutes vos obligations fiscales et comptables. Ses services
           incluent : Optimisation fiscale, Déclarations obligatoires (TVA, IS,
-          IR), Suivi régulier pour assurer la conformité, Assistance en cas de
+          IR), Suivi régulier pour assurer la conformité, assistance en cas de
           contrôle fiscal. <br /> L’objectif est de simplifier la gestion
           administrative, éviter les erreurs coûteuses, maximiser les avantages
           fiscaux et permettre au dirigeant de se concentrer sur le
@@ -27,10 +27,9 @@ const AccFiscale = () => {
       </div>
       <div className="fiscalite">
         <Link to="/form">
-        <button className="btn-nous bt">Prendre rendez-vous</button>
+          <button className="btn-nous bt">Prendre rendez-vous</button>
         </Link>
       </div>
-
     </div>
   );
 };

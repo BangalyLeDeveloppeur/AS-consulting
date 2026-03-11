@@ -11,11 +11,11 @@ const Formation = () => {
       <h2>Formation et accompagnement</h2>
       <div className="gestion">
         <p>
-          Chez As-consulting, nous croyons que la performance financière passe
+          Chez AS Consulting, nous croyons que la performance financière passe
           aussi par la maîtrise de vos outils et la montée en compétence de vos
           équipes. <br />
           Nous ne nous contentons pas de vous fournir des chiffres ; nous vous
-          donnons les clés pour les comprendre et les exploiter au quotidien.{" "}
+          donnons les clés pour les comprendre et les exploiter au quotidien.
           <br />
           Les outils comptables et de gestion (logiciels de paie, tableaux
           de bord) ne doivent pas être une source de complexité. Nous les

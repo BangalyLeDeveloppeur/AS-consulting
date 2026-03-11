@@ -15,7 +15,7 @@ const ConseilGest = () => {
       <h2>Conseil en gestion</h2>
       <div className="gestion">
         <p>
-          Chez As-consulting, nous comprenons que la réussite de votre
+          Chez AS Consulting, nous comprenons que la réussite de votre
           entreprise est indissociable de la construction et de la protection de
           votre patrimoine personnel. <br /> Nous vous accompagnons au-delà du
           cadre purement entrepreneurial pour sécuriser et faire fructifier

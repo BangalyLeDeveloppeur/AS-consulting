@@ -9,7 +9,7 @@ const QuiSomme = () => {
       <article className="aproposParagraphe">
         <div>
           <p>
-            AS-consulting est un cabinet fiscal et financier ouvert depuis
+            AS Consulting est un cabinet fiscal et financier ouvert depuis
             janvier 2020. Il propose à une clientèle exigeante des services
             spécialisés et hautement qualifiés dans les domaines de la fiscalité
             et de la planification financière.<br /> Nos collaborateurs

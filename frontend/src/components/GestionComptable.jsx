@@ -15,7 +15,7 @@ const GestionComptable = () => {
       <div className="gestion">
         <p>
           Un comptable dédié pour une gestion quotidienne simple, fluide et sans
-          stress. Vous n’avez plus le temps de gérer la comptabilité ? Confiez cette mission à un comptable dédié et concentrez-vous,
+          stress. Vous n’avez plus le temps de gérer la comptabilité? Confiez cette mission à un comptable dédié et concentrez-vous,
           enfin sur ce qui fait vraiment grandir votre entreprise. <br /> Nous
           prenons en charge l’ensemble de vos opérations comptables quotidiennes: Enregistrements, classement des pièces, rapprochements bancaires,
           suivi de trésorerie. Tout est géré avec soin, précision et régularité.

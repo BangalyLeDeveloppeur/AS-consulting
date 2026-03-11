@@ -10,7 +10,7 @@ const PourquoiNous = () => {
         <div className="choix-texte">
           <h2>Un service comptable et fiscal de qualité</h2>
           <p>
-            Au-delà des chiffres, AS-Consulting est un cabinet d’expertise{" "}
+            Au-delà des chiffres, AS Consulting est un cabinet d’expertise{" "}
             <br />
             comptable qui place l’humain au cœur de son accompagnement <br />
             et se consacre pleinement à la réussite de ses clients.
