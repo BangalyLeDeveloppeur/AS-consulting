@@ -8,6 +8,7 @@
   /* NAVBAR */
   nav.navbar.navbar-expand-lg.navbar-light.bg-light.bmn {
     width: 100%;
+    
   }
 
   .container-fluid {
@@ -302,6 +303,7 @@
 @media (max-width: 480px) {
   nav.navbar.navbar-expand-lg.navbar-light.bg-light.bmn {
     width: 100%;
+    padding: 0 20px;
   }
 
   .container-fluid {
