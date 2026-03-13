@@ -10,7 +10,7 @@ const Slide = () => {
 
   const fetchPhotos = async () => {
     try {
-      const res = await axios.get("http://localhost:5000/api/slide");
+    const res = await axios.get(`${import.meta.env.VITE_API_URL}/api/slide`);
       setSlidePhotos(res.data);
     } catch (error) {
       console.error("Erreur lors du chargement des photos :", error);
@@ -50,7 +50,7 @@ const Slide = () => {
             <>
               <img
                 className="img-fluid"
-                src={`http://localhost:5000${currentPhoto.image}`}
+                src={`${import.meta.env.VITE_API_URL}${currentPhoto.image}`}
                 alt={currentPhoto.description}
               />
               <div className="cadreParagraphe">

@@ -7,7 +7,7 @@ const Temoignage = () => {
 
   const fetchTemoignages = async () => {
     try {
-      const res = await axios.get("http://localhost:5000/api/temoignages");
+     const res = await axios.get(`${import.meta.env.VITE_API_URL}/api/temoignages`);;
       setAvis(res.data);
     } catch (error) {
       console.log("Une erreur s'est produite", error);

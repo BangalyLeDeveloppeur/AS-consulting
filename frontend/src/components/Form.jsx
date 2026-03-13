@@ -21,7 +21,7 @@ const Form = () => {
     formData.append("email", email);
 
     try {
-      await axios.post("http://localhost:5000/api/contacts", formData);
+      await axios.post(`${import.meta.env.VITE_API_URL}/api/contacts`, formData);;
 
       // Réinitialisation de tous les champs
       setNom("");

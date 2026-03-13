@@ -7,11 +7,10 @@ const Login = () => {
   const navigate = useNavigate();
   const { setToken } = useAuth();
 
-
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [message, setMessage] = useState("");
-  const [loading, setLoading] = useState(false); 
+  const [loading, setLoading] = useState(false);
 
   const handleLogin = async (e) => {
     e.preventDefault();
@@ -31,7 +30,7 @@ const Login = () => {
 
     try {
       const res = await axios.post(
-        "http://localhost:5000/api/admin/login",
+        `${import.meta.env.VITE_API_URL}/api/admin/login`,
         loginData,
         {
           headers: {

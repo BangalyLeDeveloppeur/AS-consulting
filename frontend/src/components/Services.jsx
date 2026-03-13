@@ -9,7 +9,7 @@ const Services = () => {
 
   const fetchServices = async () => {
     try {
-      const res = await axios.get("http://localhost:5000/api/services");
+      const res = await axios.get(`${import.meta.env.VITE_API_URL}/api/services`);
       setServices(res.data);
     } catch (error) {
       console.log("voici  votre erreur", error);
