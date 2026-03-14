@@ -13,14 +13,14 @@ const Navigation = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <img src={LogoFacebook} alt="logo facebook" />
+          <img src={LogoFacebook} alt="logo facebook" width="800" height="600"/>
         </a>
         <a
           href="https://wa.me/224669030219"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <img src={Logowthatsapp} alt="logo facebook" />
+          <img src={Logowthatsapp} alt="logo facebook" width="800" height="600"/>
         </a>
       </div>
       <nav className="navbar navbar-expand-lg navbar-light bg-light bmn">
