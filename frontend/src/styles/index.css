@@ -104,21 +104,34 @@ body {
 
 /* Réseaux sociaux */
 .lienSociaux {
+  position: fixed;
+  right: 20px;
+  top: 35%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   gap: 15px;
-  margin-left: auto;
-  margin-top: 10px;
+  z-index: 999;
 }
 .lienSociaux img {
   width: 28px;
   height: 28px;
   -o-object-fit: contain;
      object-fit: contain;
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+}
+.lienSociaux img:hover {
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
 }
 
 /* bouton menu */
@@ -750,9 +763,6 @@ p {
   .footer-section {
     width: 100%;
   }
-  .footer-section h4 {
-    font-size: 1.3rem;
-  }
   .footer-section li {
     font-size: 0.95rem;
   }
@@ -824,7 +834,9 @@ p {
   .aproposParagraphe p {
     font-size: 1.1rem;
     line-height: 1.6;
-    width: 100%;
+    width: 90%;
+    margin: 0 auto;
+    padding: 0 15px;
   }
   /* AVIS */
   .avis-client {
@@ -836,6 +848,7 @@ p {
   }
   .card.cadre-service.avis p {
     font-size: 1.2rem;
+    padding: 0 15px;
   }
   /* PAGE COMPTA */
   .Compta img {
@@ -867,6 +880,7 @@ p {
   button.btn-nous {
     display: block;
     left: 20%;
+    display: none;
   }
   .prendreRendeVous {
     top: 176%;
@@ -972,6 +986,9 @@ p {
   .footer {
     width: 100%;
     padding: 40px 20px;
+  }
+  .apropos .aproposParagraphe {
+    padding: 0;
   }
 }
 body {
@@ -1207,7 +1224,7 @@ button:hover {
   gap: 50px;
   padding: 0 130px;
 }
-.footer .footer-columns h4 {
+.footer .footer-columns h1, .footer .footer-columns h2, .footer .footer-columns h3 {
   font-size: 1.5rem;
   padding-bottom: 20px;
   color: white;

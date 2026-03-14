@@ -10,7 +10,7 @@ const Footer = () => {
       <div className="footer-columns ftr">
         {/* Liens rapides */}
         <div className="footer-section">
-          <h4>Liens rapides</h4>
+          <h1>Liens rapides</h1>
           <ul className="liens-rapides">
             <li>
               <Link to="/">Home</Link>
@@ -26,7 +26,7 @@ const Footer = () => {
 
         {/* Adresse */}
         <div className="footer-section">
-          <h4>Adresse</h4>
+          <h2>Adresse</h2>
           <ul className="footer-section-adressee">
             <li>Guinée Conakry</li>
             <li>
@@ -41,7 +41,7 @@ const Footer = () => {
 
         {/* Réseaux sociaux */}
         <div className="footer-section">
-          <h4>Réseaux sociaux</h4>
+          <h3>Réseaux sociaux</h3>
 
           <div className="footer-reseaux">
             <a

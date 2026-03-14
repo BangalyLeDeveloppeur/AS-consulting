@@ -2,7 +2,6 @@
   margin-right: 4%;
   display: flex;
   gap: 50px;
-  
 
   li {
     list-style: none;
@@ -32,16 +31,26 @@
 
 /* Réseaux sociaux */
 .lienSociaux {
+  position: fixed;
+  right: 20px;
+  top: 35%;
+  transform: translateY(-50%);
+
   display: flex;
-  align-items: center;
+  flex-direction: column;
   gap: 15px;
-  margin-left: auto;
-  margin-top: 10px;
+
+  z-index: 999;
 
   img {
     width: 28px;
     height: 28px;
     object-fit: contain;
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: scale(1.15);
+    }
   }
 }
 
@@ -49,7 +58,7 @@
 .bmn {
   background-color: transparent;
   padding: 0;
-  //margin-bottom: 70px;
+  
 }
 
 /* menu déroulant */

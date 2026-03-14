@@ -46,15 +46,15 @@
 
   /* HERO IMAGE */
   .cadreImage {
-  width: 100%;
-  position: relative;
-
-  img {
     width: 100%;
-    height: 220px;
-    object-fit: cover;
+    position: relative;
+
+    img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+    }
   }
-}
   .cadreParagraphe {
     position: absolute;
     top: 50%;
@@ -84,10 +84,10 @@
 
   /* COOKIE */
   .cookie-banner {
-  width: 95%;
-  left: 50%;
-  transform: translateX(-50%);
-}
+    width: 95%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 
   .cookie-banner p {
     font-size: 0.75rem;
@@ -165,12 +165,10 @@
 
   .footer-section {
     width: 100%;
+   
   }
 
-  .footer-section h4 {
-    font-size: 1.3rem;
-  }
-
+  
   .footer-section li {
     font-size: 0.95rem;
   }
@@ -238,7 +236,9 @@
   .aproposParagraphe p {
     font-size: 1.1rem;
     line-height: 1.6;
-    width: 100%;
+    width: 90%;
+    margin: 0 auto;
+    padding: 0 15px;
   }
 
   /* AVIS */
@@ -253,6 +253,7 @@
 
   .card.cadre-service.avis p {
     font-size: 1.2rem;
+    padding: 0 15px;
   }
 
   /* PAGE COMPTA */
@@ -288,6 +289,7 @@
   button.btn-nous {
     display: block;
     left: 20%;
+    display: none;
   }
 
   .prendreRendeVous {
@@ -307,6 +309,8 @@
   .formation button {
     display: block;
   }
+
+  
 }
 
 @media (max-width: 480px) {
@@ -371,13 +375,11 @@
   /* cookies */
   .cookie-banner {
     width: 100%;
-   
 
     p {
       font-size: 0.6rem;
     }
   }
-
   /* service */
   .container.text-center.t-container {
     width: 95%;
@@ -419,5 +421,9 @@
   .footer {
     width: 100%;
     padding: 40px 20px;
+   
+  }
+  .apropos .aproposParagraphe {
+    padding: 0;
   }
 }
