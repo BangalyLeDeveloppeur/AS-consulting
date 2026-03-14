@@ -513,7 +513,7 @@ p {
 .cookie-banner {
   position: fixed;
   bottom: 230px;
-  height: 180px;
+  height: 110px;
   left: 0;
   right: 0;
   background: #f0ebeb;
@@ -934,8 +934,7 @@ p {
   }
   /* cookies */
   .cookie-banner {
-    width: 87%;
-    margin-left: 3.5%;
+    width: 100%;
   }
   .cookie-banner p {
     font-size: 0.6rem;
