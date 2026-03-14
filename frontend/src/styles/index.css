@@ -586,9 +586,21 @@ p {
   }
 }
 @media (max-width: 768px) {
+  *,
+  *::before,
+  *::after {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  html,
   body {
-    padding: 0;
+    width: 100%;
     overflow-x: hidden;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
   }
   /* NAVBAR */
   nav.navbar.navbar-expand-lg.navbar-light.bg-light.bmn {
@@ -613,8 +625,8 @@ p {
   }
   /* HERO IMAGE */
   .cadreImage {
-    position: relative;
     width: 100%;
+    position: relative;
   }
   .cadreImage img {
     width: 100%;
@@ -647,11 +659,10 @@ p {
   }
   /* COOKIE */
   .cookie-banner {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    padding: 10px;
+    width: 95%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
   }
   .cookie-banner p {
     font-size: 0.75rem;
@@ -685,7 +696,7 @@ p {
         -ms-flex-direction: column;
             flex-direction: column;
     gap: 20px;
-    padding: 15px;
+    padding: 15px 5px;
   }
   .choix-texte {
     width: 100%;
@@ -891,19 +902,20 @@ p {
     width: 100%;
   }
   .navMenu li a {
-    font-size: 1rem;
+    font-size: 0.6rem;
   }
   /* logo */
   .asLlogo img {
     width: 100px;
-    height: 100px;
+    height: auto;
     -o-object-fit: contain;
        object-fit: contain;
   }
   /* paraslide */
   .cadreImage {
-    width: 100%;
-    height: 200px;
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
   }
   .cadreImage img {
     width: 100%;
@@ -922,7 +934,8 @@ p {
   }
   /* cookies */
   .cookie-banner {
-    width: 100%;
+    width: 87%;
+    margin-left: 3.5%;
   }
   .cookie-banner p {
     font-size: 0.6rem;
@@ -932,9 +945,34 @@ p {
     width: 95%;
   }
   .service-titre p {
-    font-size: 1.1rem;
+    font-size: 1rem;
     width: 93%;
     padding: 0 20px;
+  }
+  .card.cdrNous {
+    border: none;
+    width: 90%;
+  }
+  .card {
+    margin: 0 auto;
+    padding: 0;
+  }
+  .service.cad {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .cadre-service {
+    height: auto;
+  }
+  .cadre-service p {
+    font-size: 1rem;
+  }
+  .cadre-service .decouvrez {
+    top: 80%;
+  }
+  .footer {
+    width: 100%;
+    padding: 40px 20px;
   }
 }
 body {
