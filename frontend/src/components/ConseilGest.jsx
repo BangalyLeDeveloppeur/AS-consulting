@@ -6,7 +6,7 @@ const ConseilGest = () => {
   return (
     <div className="Compta">
       <div className="cadreParagraphe comp">
-        <h1>
+        <h1 className="titregestion">
           Gestion de patrimoine & protection de votre patrimoine : Sécurité et
           croissance sur le long terme
         </h1>

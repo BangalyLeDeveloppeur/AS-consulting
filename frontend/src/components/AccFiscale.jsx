@@ -6,7 +6,7 @@ const AccFiscale = () => {
   return (
     <div className="con Compta">
       <div className="cadreParagraphe comp ">
-        <h1>
+        <h1 className="titregestion">
           Fiscalité optimisée, déclarations automatisées, protection garantie
           lors des contrôles.
         </h1>

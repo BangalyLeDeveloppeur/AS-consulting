@@ -5,7 +5,7 @@ const Formation = () => {
   return (
     <div className="Compta">
       <div className="cadreParagraphe comp">
-        <h1>Notre expertise au service de votre performance</h1>
+        <h1 className="titregestion">Notre expertise au service de votre performance</h1>
       </div>
       <img src={styloImg} alt="style sur la feuille" />
       <h2>Formation et accompagnement</h2>

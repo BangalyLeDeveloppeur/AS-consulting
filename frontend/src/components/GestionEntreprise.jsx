@@ -6,7 +6,7 @@ const GestionEntreprise = () => {
   return (
     <div className="Compta">
       <div className="cadreParagraphe comp">
-        <h1>Le bon statut, les bonnes décisions, le bon départ</h1>
+        <h1 className="titregestion">Le bon statut, les bonnes décisions, le bon départ</h1>
       </div>
       <img src={Brochure} alt="livre" />
       <h2>Création est gestion d’entreprise</h2>

@@ -165,10 +165,8 @@
 
   .footer-section {
     width: 100%;
-   
   }
 
-  
   .footer-section li {
     font-size: 0.95rem;
   }
@@ -257,28 +255,35 @@
   }
 
   /* PAGE COMPTA */
-  .Compta img {
+  
+ 
+  .Compta {
     position: relative;
-    width: 100%;
-    height: 250px;
-    object-fit: cover;
+
+    img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .cadreParagraphe.comp {
+      position: absolute;
+      top: 15%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+      width: 90%;
+      text-align: center;
+      padding: 10px;
+
+      h1 {
+        font-size: 1.5rem;
+     
+        color: white;
+      }
+    }
   }
-  .cadreParagraphe.comp {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-
-  width: 90%;
-  text-align: center;
-  color: white;
-
-  h1 {
-    font-size: 1.5rem;
-    margin: 0;
-  }
-}
-
 
   .gestion {
     width: 95%;
@@ -286,6 +291,7 @@
 
   .gestion p {
     font-size: 1.2rem;
+    padding: 0 15px;
   }
 
   button.btn-nous {
@@ -305,6 +311,7 @@
 
   .creation-entreprise p {
     font-size: 1.2rem;
+    padding: 0 25px;
   }
 
   .fiscalite button,
@@ -312,7 +319,11 @@
     display: block;
   }
 
-  
+  h1.titregestion {
+    margin-top: 20%;
+    top: 5;
+}
+
 }
 
 @media (max-width: 480px) {
@@ -423,10 +434,11 @@
   .footer {
     width: 100%;
     padding: 40px 20px;
-   
+
   }
   .apropos .aproposParagraphe {
     padding: 0;
   }
+
 }
 
