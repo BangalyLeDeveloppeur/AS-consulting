@@ -2,31 +2,56 @@
 <html lang="fr-FR">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>AS Consulting | Cabinet Comptable & Conseil Fiscal</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="geo.region" content="GN" />
+    <meta name="geo.placename" content="Conakry" />
+    <title>
+      AS Consulting | Cabinet Comptable & Conseil Fiscal en republique de Guinée
+      à Conakry
+    </title>
 
     <meta
       name="description"
-      content="AS Consulting, cabinet comptable et conseil fiscal à Conakry, Guinée. Expertise en comptabilité, fiscalité, audit, gestion d'entreprise et formation. Accompagnement personnalisé pour PME et indépendants."
+      content="AS Consulting est un cabinet comptable et conseil fiscal à Conakry, Guinée. Expertise en comptabilité, fiscalité, audit et gestion d'entreprise pour PME et indépendants."
     />
 
     <meta name="robots" content="index, follow" />
     <meta name="author" content="AS Consulting" />
 
+    <!-- Canonical SEO -->
+    <link rel="canonical" href="https://www.asconsulting.com/" />
+
+    <!-- Favicon -->
     <link rel="icon" type="image/png" href="/Logo.png" />
 
-    <!-- Open Graph -->
+    <!-- Open Graph (SEO réseaux sociaux) -->
     <meta
       property="og:title"
       content="AS Consulting | Cabinet Comptable & Conseil Fiscal"
     />
     <meta
       property="og:description"
-      content="Cabinet comptable et conseil fiscal pour entreprises et indépendants."
+      content="Cabinet comptable et conseil fiscal à Conakry pour PME et entrepreneurs."
     />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="/Logo.png" />
+    <meta property="og:url" content="https://www.asconsulting.com/" />
+    <meta property="og:image" content="https://www.asconsulting.com/Logo.png" />
+
+    <!-- Twitter SEO -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="AS Consulting | Cabinet Comptable en Guinée Conakry"
+    />
+    <meta
+      name="twitter:description"
+      content="Cabinet comptable spécialisé en fiscalité, audit et gestion d'entreprise."
+    />
+    <meta
+      name="twitter:image"
+      content="https://www.asconsulting.com/Logo.png"
+    />
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -36,10 +61,32 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Montserrat:wght@600;700&display=swap"
       rel="stylesheet"
     />
+
+    <!-- Schema.org (SEO Google entreprise) -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "AccountingService",
+        "name": "AS Consulting",
+        "url": "https://www.asconsulting.com",
+        "logo": "https://www.asconsulting.com/Logo.png",
+        "image": "https://www.asconsulting.com/Logo.png",
+        "description": "Cabinet comptable et conseil fiscal basé en Guinée Conakry, spécialisé en gestion d'entreprise, fiscalité et audit.",
+        "telephone": "+224669030219",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Kobayah derrière la station Total",
+          "addressLocality": "Conakry",
+          "addressCountry": "GN"
+        },
+        "areaServed": "Guinea"
+      }
+    </script>
   </head>
 
   <body>
     <div id="root"></div>
+
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
