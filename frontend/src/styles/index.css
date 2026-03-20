@@ -188,10 +188,10 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  top: 58%;
+  top: 57%;
   left: 5%;
   bottom: 130px;
-  height: 340px;
+  height: 320px;
   width: 50%;
   background: rgba(0, 0, 0, 0.5490196078);
   position: absolute;
@@ -209,7 +209,7 @@ body {
           align-items: center;
   height: 60px;
   width: 250px;
-  top: 79%;
+  top: 89%;
   left: 20%;
   background: #227235;
   border: none;
@@ -247,7 +247,7 @@ body {
 .cadreFac svg.svg-inline--fa.fa-arrow-left,
 .cadreFac svg.svg-inline--fa.fa-arrow-right,
 .cadreFac button {
-  margin-top: -35%;
+  margin-top: -45%;
   font-size: 2rem;
   color: #227235;
   background: transparent;
@@ -390,8 +390,8 @@ p {
   padding: 10px 0;
 }
 .apropos .aproposParagraphe button.btn-nous.prendreRendeVous {
-  top: 148%;
-  left: 19%;
+  top: 178%;
+  left: 15%;
 }
 .apropos p {
   font-size: 1.5rem;
@@ -486,7 +486,8 @@ p {
   padding: 0 50px;
 }
 .choix .choix-texte button.savoirPlus.rendezVous {
-  top: 73%;
+  display: none;
+  top: 85%;
   left: 23%;
 }
 
