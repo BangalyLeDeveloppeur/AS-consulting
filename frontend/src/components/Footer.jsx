@@ -72,7 +72,7 @@ const Footer = () => {
       </div>
 
       <div className="footer-bottom">
-        <span>Asconsulting. Tous droits réservés.</span>
+        <span>AS Consulting. Tous droits réservés.</span>
       </div>
     </footer>
   );
