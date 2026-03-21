@@ -65,7 +65,7 @@ const Login = () => {
 
   return (
     <form onSubmit={handleLogin} className="form-login">
-      <h2>Connexion Admin</h2>
+      <h2>Connexion admin</h2>
 
       <div className="form-group">
         <label>Email</label>

@@ -71,7 +71,7 @@ body {
   padding: 25px;
   margin-bottom: 30px;
   border-radius: 10px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
 }
 
 /* Titres */
@@ -101,4 +101,7 @@ button {
 
 button:hover {
   background: #4338ca;
+}
+.cookie-banner {
+  display: none;
 }
