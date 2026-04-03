@@ -37,7 +37,7 @@ const FormulaireContact = () => {
                   <ul className="list-unstyled">
                     <li className="mb-2 d-flex align-items-center">
                       <i className="bi bi-envelope me-2"></i>
-                      contact@asconsulting-guinée.com
+                      contact@asconsulting-guinea.com
                     </li>
                     <li className="mb-2 d-flex align-items-start">
                       <i className="bi bi-phone me-2 mt-1"></i>
